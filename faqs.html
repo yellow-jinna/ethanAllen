@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETHAN ALLEN</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ethanAllen.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="shopPanel">
+        <h2>
+            SHOP
+            <button type="button" class="material-symbols-outlined closeBtn">
+                close
+            </button>
+        </h2>
+        <ul>
+            <li>
+                <a href="list_newArrival.html">New Arrivals</a>
+            </li>
+            <li>
+                <a href="list_bestSeller.html">Best Sellers</a>
+            </li>
+            <li>
+                <b>Living</b>
+                <ol>
+                    <li><a href="list_living_shopAll.html">Shop All</a></li>
+                    <li><a href="list_living_sofa.html">Sofas &amp; Sectionals</a></li>
+                    <li><a href="list_living_table.html">Tables</a></li>
+                    <li><a href="list_living_chair.html">Chairs</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Dining</b>
+                <ol>
+                    <li><a href="list_dining_shopAll.html">Shop All</a></li>
+                    <li><a href="list_dining_table.html">Dining Tables</a></li>
+                    <li><a href="list_dining_chair.html">Dining Chairs</a></li>
+                    <li><a href="list_dining_storage.html">Storage</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Bedroom</b>
+                <ol>
+                    <li><a href="list_bedroom_shopAll.html">Shop All</a></li>
+                    <li><a href="list_bedroom_bed.html">Beds</a></li>
+                    <li><a href="list_bedroom_dresser.html">Dressers</a></li>
+                    <li><a href="list_bedroom_table.html">Night Tables</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Home Office</b>
+                <ol>
+                    <li><a href="list_homeOffice_shopAll.html">Shop All</a></li>
+                    <li><a href="list_homeOffice_desk.html">Desks</a></li>
+                    <li><a href="list_homeOffice_chair.html">Desk Chairs</a></li>
+                    <li><a href="list_homeOffice_storage.html">Storage</a></li>
+                    <li><a href="list_homeOffice_acc.html">Desk Accessories</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Lighting</b>
+                <ol>
+                    <li><a href="list_lighting_shopAll.html">Shop All</a></li>
+                    <li><a href="list_lighting_tableLamp.html">Table Lamps</a></li>
+                    <li><a href="list_lighting_floorLamp.html">Floor Lamps</a></li>
+                    <li><a href="list_lighting_chandelier.html">Chandeliers</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Home Decor</b>
+                <ol>
+                    <li><a href="list_homeDecor_shopAll.html">Shop All</a></li>
+                    <li><a href="list_homeDecor_art.html">Arts</a></li>
+                    <li><a href="list_homeDecor_plant.html">Plants</a></li>
+                    <li><a href="list_homeDecor_accent.html">Home Accents</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="list_clearance.html">Clearance</a>
+            </li>
+        </ul>
+    </div>
+    <!-- shop Panel -->
+    <div class="ourstoryPanel">
+        <h2>
+            OUR STORY
+            <button type="button" class="material-symbols-outlined closeBtn">
+                close
+            </button>
+        </h2>
+        <ul>
+            <li><a href="message_chairman.html">Message from the Chairman</a></li>
+            <li><a href="our_ceo_chairman.html">Our CEO, Chairman</a></li>
+            <li><a href="leadership_principles.html">Leadership Principles</a></li>
+            <li><a href="corporate_responsibility.html">Corporate Responsibility</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+    </div>
+    <!-- our story Panel -->
+    <div class="searchPanel">
+        <button type="button" class="material-symbols-outlined closeBtn">
+            close
+        </button>
+        <form>
+            <div>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="search" id="searchInput" name="search" placeholder="Search" title="insert your search Keyword's">
+            </div>
+        </form>
+    </div>
+    <!-- search Panel -->
+    <div class="cartPanel">
+        <h2>
+            Your Order
+            <button type="button" class="material-symbols-outlined closeBtn">
+                close
+            </button>
+        </h2>
+        <div class="emptyCart">
+            <h3>Your cart is empty</h3>
+            <p>There's nothing in your cart yet... but there could be!</p>
+            <a href="list_newArrival.html" class="btn base">SHOP ETHAN ALLEN</a>
+        </div>
+        <!-- empty cart -->
+        <div class="fillCart active">
+            <form action="checkout_information.html">
+                <ul>
+                    <li>
+                        <button type="button" class="material-symbols-outlined removeBtn">
+                            close
+                        </button>
+                        <a href="detail_homeOffice_acc_04.html"><img src="images/homeOffice_acc_04_s1.png" alt="product image"></a>
+                        <dl>
+                            <dt>Brewster Catch-All Cube</dt>
+                            <dd>Ivory</dd>
+                        </dl>
+                        <div class="qtyComponent">
+                            <input type="button" value="-" class="qtyRemove">
+                            <span>1</span>
+                            <input type="button" value="+" class="qtyAdd">
+                        </div>
+                        <strong>$240.00</strong>
+                    </li>
+                    <li>
+                        <button type="button" class="material-symbols-outlined removeBtn">
+                            close
+                        </button>
+                        <a href="detail_living_chair_01.html"><img src="images/living_chair_01_s1.png" alt="product image"></a>
+                        <dl>
+                            <dt>Solenne Swivel Chair</dt>
+                            <dd>Hibbert Natural</dd>
+                        </dl>
+                        <div class="qtyComponent">
+                            <input type="button" value="-" class="qtyRemove">
+                            <span>1</span>
+                            <input type="button" value="+" class="qtyAdd">
+                        </div>
+                        <strong>$2,250.00</strong>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        Total
+                        <strong>$2,490.00</strong>
+                    </span>
+                    <button type="submit" class="btn base">checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- cart Panel -->
+    <div class="leftPanel">
+        <button type="button" class="material-symbols-outlined closeBtn">
+            close
+        </button>
+        <ul>
+            <li><button type="button" data-panel="shopPanel">SHOP</button></li>
+            <li><button type="button" data-panel="ourstoryPanel">OUR STORY</button></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <header>
+        <ol>
+            <li><a href="list_clearance.html">SHOP CLIEARANCE BEFORE ITS GONE</a></li>
+            <li><a href="location.html">MAKE AN APPOINTMENT AT YOUR LOCAL DESIGN CENTER</a></li>
+            <li><a href="list_clearance.html">SHOP CLIEARANCE BEFORE ITS GONE</a></li>
+            <li><a href="location.html">MAKE AN APPOINTMENT AT YOUR LOCAL DESIGN CENTER</a></li>
+        </ol>
+        <!-- banner -->
+        <h1><a href="index_after.html"><img src="images/logo.png" alt="welcome to Ethan Allen"></a></h1>
+        <button type="button" class="material-symbols-outlined mui" data-panel="leftPanel">menu</button>
+        <nav>
+            <ul>
+                <li>
+                    <button type="button" data-panel="shopPanel">SHOP</button>
+                </li>
+                <li>
+                    <button type="button" data-panel="ourstoryPanel">OUR STORY</button>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="material-symbols-outlined mui">more</button>
+        <ul>
+            <li>
+                <button type="button" data-panel="searchPanel">
+                    <span>SEARCH</span>
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </li>
+            <li>
+                <a href="location.html" class="material-symbols-outlined">location_on</a>
+            </li>
+            <li>
+                <a href="my_account.html" class="material-symbols-outlined">account_circle</a>
+            </li>
+            <li>
+                <button type="button" class="material-symbols-outlined" data-panel="cartPanel">shopping_cart</button>
+                <sup>99</sup>
+            </li>
+            <li>
+                <button type="button" class="material-symbols-outlined closeBtn">close</button>
+            </li>
+        </ul>
+    </header>
+    <!-- header -->
+    <section class="faqsContainer">
+        <div class="bgContent">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div>
+            <h3>ONLINE ORDERS & SHOPPING</h3>
+            <ul class="accComponent">
+                <li>
+                    <h4>Can I order by telephone?</h4>
+                    <p>Absolutely! You can reach us at 1.888.EAHELP1 (1.888.324.3571) Monday through Friday, 8:30AM to 4:45PM ET. When prompted, please select Option 1.</p>
+                </li>
+                <li>
+                    <h4>Do I need a registered account to make a purchase?</h4>
+                    <p>No, but we do encourage you to become a registered user so that your address information and order history is on file for easy future ordering. Registered users can also add their favorite designer or Design Center to an order in their account profile.</p>
+                </li>
+                <li>
+                    <h4>When will my credit card be charged?</h4>
+                    <p>Your credit card will be charged in full at the time the order is placed. Our full <a href="terms_conditions.html">terms and conditions</a> of sale outline this.</p>
+                </li>
+                <li>
+                    <h4>What methods of payment do you accept?</h4>
+                    <p>For online and in-store orders, we accept Visa, MasterCard, American Express, and the Ethan Allen Platinum Card. We accept PayPal and Apple Pay for online orders only. You can also use Ethan Allen gift cards in store and online in combination with a credit card, but we cannot process multiple credit payment methods.</p>
+                </li>
+                <li>
+                    <h4>What is your cancellation policy?</h4>
+                    <p>We cannot accept order cancellations on any custom-made or custom-cut items after 72 hours of order placement. For all other items that have not shipped, we will accept cancellations and issue full refunds to your original form of payment. To cancel an ethanallen.com order, please contact our Internet Service Center at 1.888.EAHELP1 (1.888.324.3571) or email us at <a href="mailto:orders@ethanallen.com">orders@ethanallen.com</a>. For items that have shipped, please refer to the <a href="#returnPolicy">return policy</a> that applies.</p>
+                </li>
+                <li>
+                    <h4>How do I make changes to or cancel my order?</h4>
+                    <p>You can either speak with a client service professional at 1.888.EAHELP1 (1.888.324.3571) or email us at <a href="mailto:orders@ethanallen.com">orders@ethanallen.com</a>. We will need your order number and details of the item(s) you would like to change or cancel. If your order was placed in a Design Center, you should contact that location to change or cancel your order.</p>
+                </li>
+                <li>
+                    <h4>When can I expect a refund for a cancelled item?</h4>
+                    <p>It can take up to 5 business days for your cancellation and refund to be processed. A credit will be issued to the original credit card account or if your original form of payment was an Ethan Allen gift card, a new gift card will be issued. Refunds generally appear on your credit card statement within one to two billing cycles.</p>
+                </li>
+                <li>
+                    <h4>How can I check the status of my online/in-store order?</h4>
+                    <p>You can check the status of your order <a href="my_order.html">here</a>. You can check your order by logging in as a registered user or as a guest with your order information.</p>
+                </li>
+                <li>
+                    <h4>Where can I find the status of my in-store purchase?</h4>
+                    <p>You can check the status of your order <a href="my_order.html">here</a>, or you may contact the Design Center directly. You can find Design Center contact information <a href="location.html">here</a>.</p>
+                </li>
+                <li>
+                    <h4>Are your prices the same online and in-store?</h4>
+                    <p>All prices and services featured on ethanallen.com are quoted in U.S. dollars, are valid and effective only in the contiguous United States , and are optional with each independently operated Ethan Allen Design Center.</p>
+                </li>
+                <li>
+                    <h4>Are all of your products available for sale online?</h4>
+                    <p>Many of our products and custom options are available online, but there’s a lot more to see in-store. Visit your local Design Center to discover our full product assortment.</p>
+                </li>
+                <li>
+                    <h4>Are the delivery dates on your product pages guaranteed?</h4>
+                    <p>Although we strive to provide the most accurate time frames for when you can expect to receive your order, sometimes delays do occur; however, if your order's production should fall significantly behind schedule, you will receive an email update.</p>
+                </li>
+                <li>
+                    <h4>How do I list my preferred designer on my online order?</h4>
+                    <p>To list a designer while placing an order, you need to have an account and be logged in. In your account profile, locate the “Preferred Design Center and Design Consultant” fields and then select in the Design Center location and the designer’s name. Don’t have an account? Register for one <a href="signInUp.html">here</a>.</p>
+                </li>
+                <li>
+                    <h4>I am receiving an error message asking me to contact my financial institution. What is wrong?</h4>
+                    <p>We have address verification with credit card validation in place at checkout. If you are receiving this message, it could mean your financial institution cannot validate your address. Please confirm the address you entered is consistent with the one on your billing statement.</p>
+                </li>
+                <li>
+                    <h4>Will you share my email, home, or business address with other companies?</h4>
+                    <p>We have a strict privacy policy in place. For more information, <a href="privacy_policy.html">click here</a>.</p>
+                </li>
+                <li>
+                    <h4>What web browsers does your site support?</h4>
+                    <p>For best viewing of ethanallen.com make sure your browser is up to date to the latest versions. Our site is responsive and is supported on the latest versions of : Chrome / MS Edge / Mozilla Firefox / Safari</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Shipping and Delivery for Online Orders</h3>
+            <ul class="accComponent">
+                <li>
+                    <h4>What locations do you ship to?</h4>
+                    <p>We currently ship to destinations within the contiguous United States; however, remote areas and island addresses requiring ferry service may be subject to special rates. We do not ship to PO boxes, APO and FPO addresses. Please contact our Internet Service Center at 1.888.EAHELP1 (1.888.324.3571) or email us at <a href="mailto:orders@ethanallen.com">orders@ethanallen.com</a> for more information on shipping to an address involving ferry service.</p>
+                </li>
+                <li>
+                    <h4>Do you ship internationally?</h4>
+                    <p>We do not ship internationally at this time.</p>
+                </li>
+                <li>
+                    <h4>What methods of shipment do you use?</h4>
+                    <p>We determine the shipping method based on the item and its packaging. Each product's detail page displays its availability and shipping method. Swatch orders ship via USPS, while many of our smaller accent items ship via UPS. Larger accent items and furniture items are delivered via our <a href="shipping_premier.html">Premier In-home Delivery service</a>.</p>
+                </li>
+                <li>
+                    <h4>What does the Premier In-home Delivery service include?</h4>
+                    <p>With <a href="shipping_premier.html">Premier In-home Delivery</a>, our exceptional customer service continues right to your door. Our skilled delivery team inspects and prepares each item before carefully assembling it (when necessary) and placing it in your home. Premier In-home Delivery is scheduled by appointment. Please note that our delivery teams cannot install electronic equipment in our furniture.</p>
+                </li>
+                <li>
+                    <h4>What are your shipping and handling charges?</h4>
+                    <p>Our shipping and handling and Premier In-home Delivery rate schedule can be found <a href="shipping_premier.html">here</a>.</p>
+                </li>
+                <li>
+                    <h4>Can I pick up my order in a Design Center?</h4>
+                    <p>No. Orders from ethanallen.com are delivered via UPS or Premier In-Home Delivery.</p>
+                </li>
+                <li>
+                    <h4>I ordered multiple items. Will they be delivered separately or together?</h4>
+                    <p>Items that ship via UPS or USPS will be shipped as the orders are filled. Premier In-home Delivery items are typically held until all items have arrived at your local service center. If you’d like to request multiple deliveries, please call the delivery number on your confirmation email. Please note that additional fees may apply to multiple deliveries.</p>
+                </li>
+                <li>
+                    <h4>Can my order be expedited?</h4>
+                    <p>Some in-stock UPS items may be eligible for express shipping for an additional fee. If expedited shipping is available for your items, the options will appear at checkout. Expedited shipping is not available for Premier In-Home Delivery items or Fabric Swatches. Please view our <a href="shipping_ups.html">shipping and handling rates</a> for more information.</p>
+                </li>
+                <li>
+                    <h4>Who can I call to schedule delivery?</h4>
+                    <p>The contact number for the Ethan Allen Service Center that will complete your Premier In-home delivery is included in your order confirmation email.</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Returns and Exchanges</h3>
+            <ul class="accComponent">
+                <li>
+                    <h4>Can I return an item I purchased online?</h4>
+                    <p>We do not accept returns on custom-made or custom-finished items; clearance items; mattresses, mattress pads, foundations, or box springs; direct-wire lighting (includes chandeliers); custom-cut fabrics; or custom artwork/mirrors. Items that ship UPS can be sent back to the mailing address on the packing slip within 10 days of receipt. For items that ship via Premier In-home Delivery, contact our Internet Service Center at 1.888.EAHELP1 (1.888.324.3571) within 10 days of receiving your delivery. If authorized, a pickup will be scheduled within 30 days of your receipt of the product. A credit will be issued to the original credit card account, however shipping charges are not refundable. See complete return procedure and fees in our <a href="terms_conditions.html">purchase terms and conditions</a>.</p>
+                </li>
+                <li>
+                    <h4>What do I do if there is a problem with an item/package I have received via UPS?</h4>
+                    <p>If the item you received via UPS is damaged or defective or you have received the wrong item, please call us at 1.888.EAHELP1 (1.888.324.3571) or send an email with your order number and details to <a href="mailto:orders@ethanallen.com">orders@ethanallen.com</a> to initiate warranty service. Our client service professionals are available Monday through Friday, 8:30AM to 4:45PM ET, to assist you. In instances of damage, if you email us, please include photos of the item to help expedite the process.</p>
+                </li>
+                <li>
+                    <h4>What do I do if there is a problem with an item that was delivered via Premier In-home delivery?</h4>
+                    <p>If you accepted delivery of a damaged or defective item or you feel you have received the wrong item, please call the service telephone number included on your confirmation email to request a service appointment. If you are unsure of the number to call, please call us at 1.888.EAHELP1 (1.888.324.3571) or send an email with your order number and details to <a href="mailto:orders@ethanallen.com">orders@ethanallen.com</a>. Our client service professionals are available Monday through Friday, 8:30AM to 4:45PM ET, to assist you.</p>
+                </li>
+                <li>
+                    <h4>How long does a refund take?</h4>
+                    <p>A credit will be issued to your original form of payment 15 days after either the pickup date or the date we receive the item at our returns distribution center. Refunds generally appear on your credit card billing statement within one to two billing cycles.</p>
+                </li>
+                <li>
+                    <h4>Can I return larger furniture to a Design Center?</h4>
+                    <p>Items delivered via our <a href="shipping_premier.html">Premier In-home delivery service</a> cannot be returned to a local Design Center. A pickup must be scheduled to arrange a return.</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Product and Warranty information</h3>
+            <ul class="accComponent">
+                <li>
+                    <h4>What is your warranty?</h4>
+                    <p>Please see our <a href="file/EthanAllen_WarrantyBrochure.pdf">warranty brochure</a>.</p>
+                </li>
+                <li>
+                    <h4>Do you offer an extended warranty plan?</h4>
+                    <div class="tableWrap">
+                        <table>
+                            <caption>FURNITURE PROTECTION PLAN PRICING</caption>
+                            <thead>
+                                <tr>
+                                    <th>Cost of Product Before Tax</th>
+                                    <th>Cost of Plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Up to $2,000</td>
+                                    <td>$199</td>
+                                </tr>
+                                <tr>
+                                    <td>$2,001 to $3,000</td>
+                                    <td>$299</td>
+                                </tr>
+                                <tr>
+                                    <td>$3,001 to $4,000</td>
+                                    <td>$399</td>
+                                </tr>
+                                <tr>
+                                    <td>$4,001 to $5,000</td>
+                                    <td>$499</td>
+                                </tr>
+                                <tr>
+                                    <td>$5,001 to $7,500</td>
+                                    <td>$599</td>
+                                </tr>
+                                <tr>
+                                    <td>$7,501 to $10,000</td>
+                                    <td>$699</td>
+                                </tr>
+                                <tr>
+                                    <td>$10,001 to $13,000</td>
+                                    <td>$799</td>
+                                </tr>
+                                <tr>
+                                    <td>$13,001 to $15,000</td>
+                                    <td>$899</td>
+                                </tr>
+                                <tr>
+                                    <td>$15,001 to $20,000</td>
+                                    <td>$999</td>
+                                </tr>
+                                <tr>
+                                    <td>$20,001 to $30,000</td>
+                                    <td>$1,099</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <h4>I need a part. How can I order it?</h4>
+                    <p>Parts, if available, can be ordered through any of our Design Centers.</p>
+                </li>
+                <li>
+                    <h4>Who do I contact for warranty service?</h4>
+                    <p>If your Ethan Allen product is received damaged or develops a manufacturing defect that is covered by the Ethan Allen Limited Warranty, contact the Ethan Allen Service Center that delivered your order, or call our Internet Service Center at 1.888.EAHELP1 (1.888.324.3571) to speak with a client service professional.</p>
+                </li>
+                <li>
+                    <h4>Can you assist in the non-warranty repair of my Ethan Allen item?</h4>
+                    <p>Some Ethan Allen locations offer repair services or can recommend a repair company that clients have worked with in the past. If you are unsure of where your local Ethan Allen Design Center is located, you can find it <a href="location.html">here</a>. If you are unable to locate your nearest Design Center through the link, please email us at <a href="mailto:orders@ethanallen.com">orders@ethanallen.com</a> (be sure to tell us your zip code), and we will be happy to supply you with the contact information of the Ethan Allen Design Center nearest you.</p>
+                </li>
+                <li>
+                    <h4>Can I order a slipcover for my existing Ethan Allen sofa?</h4>
+                    <p>Some upholstery pieces have specialized slipcovers that can be ordered through any of our Design Centers. If your piece does not have a specific slipcover, a local Design Center may be able to help you with a custom made slipcover for you.</p>
+                </li>
+                <li>
+                    <h4>What furniture polish should I use?</h4>
+                    <p>Although Ethan Allen does not recommend the use of polishes on our products, we do understand that, from time to time, you may want to use a polish when cleaning your furniture. Some clients have had success with polishing products from Guardsman.com. Do not use any polishes that contain waxes or silicones. As always, we recommend that you test any product on the back or underside of your furniture to make sure that it does not react poorly with the finish.</p>
+                </li>
+                <li>
+                    <h4>Can I use my own fabric on your item?</h4>
+                    <p>Ethan Allen is not able to manufacture items using non-Ethan Allen fabrics. Every piece Ethan Allen manufactures must meet our high quality standards, and so our fabrics have been tested to ensure these standards are met. We can, however, manufacture your piece in muslin. This fabric is suitable for an upholsterer to re-cover.</p>
+                </li>
+                <li>
+                    <h4>Does your upholstered furniture contain flame retardants?</h4>
+                    <p>All of Ethan Allen’s upholstery products are 100% flame-retardant free in accordance with our standards of manufacturing.</p>
+                </li>
+                <li>
+                    <h4>Where is my product coming from?</h4>
+                    <p>For more than 85 years, Ethan Allen has been producing quality home furnishings. We are committed to providing high-quality products at the best value for our clients. Ethan Allen owns and operates five manufacturing facilities, including two manufacturing plants and one sawmill in the United States plus one plant each in Mexico and Honduras. Approximately 75% of our products are made in our North American plants. Our imported products are designed and engineered by Ethan Allen and manufactured solely for Ethan Allen in accordance with our specifications.</p>
+                </li>
+                <li>
+                    <h4>How do I get added to your catalog mailing list?</h4>
+                    <p>To be added to our mailing list, please email your mailing address to <a href="mailto:mailings@ethanallen.com">mailings@ethanallen.com</a>.</p>
+                </li>
+                <li>
+                    <h4>How do I stop receiving Ethan Allen emails and mail?</h4>
+                    <p>You can be removed from our catalog mailing list <a href="mailing_list_preferences.html">here</a>. You can be removed from our email list by clicking the "Unsubscribe" link on one of our emails.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Stay In Touch</h2>
+            <p>For the latest Ethan Allen news, enter your email address.</p>
+            <form>
+                <input type="email" id="emailInput" name="userEmail" placeholder="email@example.com" title="insert your email" required>
+                <button type="submit" class="btn arrow">SUBMIT</button>
+            </form>
+            <ul>
+                <li><a href="https://www.facebook.com/ethanallendesign" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/ethanallen/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/ethanallen/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/ethan-allen" target="_blank">linkedin</a></li>
+            </ul>
+        </div>
+        <!-- stay in touch -->
+        <div>
+            <div>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="list_living_shopAll.html">Living</a></li>
+                    <li><a href="list_dining_shopAll.html">Dining</a></li>
+                    <li><a href="list_bedroom_shopAll.html">Bedroom</a></li>
+                    <li><a href="list_homeOffice_shopAll.html">Home Office</a></li>
+                    <li><a href="list_lighting_shopAll.html">Lighting</a></li>
+                    <li><a href="list_homeDecor_shopAll.html">Home Decor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>COMPANY</h2>
+                <ul>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="hospitality.html">Hospitality</a></li>
+                    <li><a href="social_responsibility.html">Social Responsibility</a></li>
+                    <li><a href="business_development.html">Business Development</a></li>
+                    <li><a href="digital_magazines.html">Digital Magazines</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CLIENT SERVICES</h2>
+                <ul>
+                    <li><a href="my_order.html">Order Tracking</a></li>
+                    <li><a href="shipping_premier.html">Shipping</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="mailing_list_preferences.html">Mailing List Preferences</a></li>
+                    <li><a href="email_preferences.html">Email Preferences</a></li>
+                    <li><a href="furniture_safety_initiative.html">Ethan Allen Furniture Safety Initiative</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="terms_conditions.html">Terms &amp; Conditions</a>
+                <span>©2024 Ethan Allen Global, Inc.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

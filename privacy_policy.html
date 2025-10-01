@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETHAN ALLEN</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ethanAllen.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div class="shopPanel">
+        <h2>
+            SHOP
+            <button type="button" class="material-symbols-outlined closeBtn">
+                close
+            </button>
+        </h2>
+        <ul>
+            <li>
+                <a href="list_newArrival.html">New Arrivals</a>
+            </li>
+            <li>
+                <a href="list_bestSeller.html">Best Sellers</a>
+            </li>
+            <li>
+                <b>Living</b>
+                <ol>
+                    <li><a href="list_living_shopAll.html">Shop All</a></li>
+                    <li><a href="list_living_sofa.html">Sofas &amp; Sectionals</a></li>
+                    <li><a href="list_living_table.html">Tables</a></li>
+                    <li><a href="list_living_chair.html">Chairs</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Dining</b>
+                <ol>
+                    <li><a href="list_dining_shopAll.html">Shop All</a></li>
+                    <li><a href="list_dining_table.html">Dining Tables</a></li>
+                    <li><a href="list_dining_chair.html">Dining Chairs</a></li>
+                    <li><a href="list_dining_storage.html">Storage</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Bedroom</b>
+                <ol>
+                    <li><a href="list_bedroom_shopAll.html">Shop All</a></li>
+                    <li><a href="list_bedroom_bed.html">Beds</a></li>
+                    <li><a href="list_bedroom_dresser.html">Dressers</a></li>
+                    <li><a href="list_bedroom_table.html">Night Tables</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Home Office</b>
+                <ol>
+                    <li><a href="list_homeOffice_shopAll.html">Shop All</a></li>
+                    <li><a href="list_homeOffice_desk.html">Desks</a></li>
+                    <li><a href="list_homeOffice_chair.html">Desk Chairs</a></li>
+                    <li><a href="list_homeOffice_storage.html">Storage</a></li>
+                    <li><a href="list_homeOffice_acc.html">Desk Accessories</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Lighting</b>
+                <ol>
+                    <li><a href="list_lighting_shopAll.html">Shop All</a></li>
+                    <li><a href="list_lighting_tableLamp.html">Table Lamps</a></li>
+                    <li><a href="list_lighting_floorLamp.html">Floor Lamps</a></li>
+                    <li><a href="list_lighting_chandelier.html">Chandeliers</a></li>
+                </ol>
+            </li>
+            <li>
+                <b>Home Decor</b>
+                <ol>
+                    <li><a href="list_homeDecor_shopAll.html">Shop All</a></li>
+                    <li><a href="list_homeDecor_art.html">Arts</a></li>
+                    <li><a href="list_homeDecor_plant.html">Plants</a></li>
+                    <li><a href="list_homeDecor_accent.html">Home Accents</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="list_clearance.html">Clearance</a>
+            </li>
+        </ul>
+    </div>
+    <!-- shop Panel -->
+    <div class="ourstoryPanel">
+        <h2>
+            OUR STORY
+            <button type="button" class="material-symbols-outlined closeBtn">
+                close
+            </button>
+        </h2>
+        <ul>
+            <li><a href="message_chairman.html">Message from the Chairman</a></li>
+            <li><a href="our_ceo_chairman.html">Our CEO, Chairman</a></li>
+            <li><a href="leadership_principles.html">Leadership Principles</a></li>
+            <li><a href="corporate_responsibility.html">Corporate Responsibility</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+    </div>
+    <!-- our story Panel -->
+    <div class="searchPanel">
+        <button type="button" class="material-symbols-outlined closeBtn">
+            close
+        </button>
+        <form>
+            <div>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="search" id="searchInput" name="search" placeholder="Search" title="insert your search Keyword's">
+            </div>
+        </form>
+    </div>
+    <!-- search Panel -->
+    <div class="cartPanel">
+        <h2>
+            Your Order
+            <button type="button" class="material-symbols-outlined closeBtn">
+                close
+            </button>
+        </h2>
+        <div class="emptyCart">
+            <h3>Your cart is empty</h3>
+            <p>There's nothing in your cart yet... but there could be!</p>
+            <a href="list_newArrival.html" class="btn base">SHOP ETHAN ALLEN</a>
+        </div>
+        <!-- empty cart -->
+        <div class="fillCart active">
+            <form action="checkout_information.html">
+                <ul>
+                    <li>
+                        <button type="button" class="material-symbols-outlined removeBtn">
+                            close
+                        </button>
+                        <a href="detail_homeOffice_acc_04.html"><img src="images/homeOffice_acc_04_s1.png" alt="product image"></a>
+                        <dl>
+                            <dt>Brewster Catch-All Cube</dt>
+                            <dd>Ivory</dd>
+                        </dl>
+                        <div class="qtyComponent">
+                            <input type="button" value="-" class="qtyRemove">
+                            <span>1</span>
+                            <input type="button" value="+" class="qtyAdd">
+                        </div>
+                        <strong>$240.00</strong>
+                    </li>
+                    <li>
+                        <button type="button" class="material-symbols-outlined removeBtn">
+                            close
+                        </button>
+                        <a href="detail_living_chair_01.html"><img src="images/living_chair_01_s1.png" alt="product image"></a>
+                        <dl>
+                            <dt>Solenne Swivel Chair</dt>
+                            <dd>Hibbert Natural</dd>
+                        </dl>
+                        <div class="qtyComponent">
+                            <input type="button" value="-" class="qtyRemove">
+                            <span>1</span>
+                            <input type="button" value="+" class="qtyAdd">
+                        </div>
+                        <strong>$2,250.00</strong>
+                    </li>
+                </ul>
+                <div>
+                    <span>
+                        Total
+                        <strong>$2,490.00</strong>
+                    </span>
+                    <button type="submit" class="btn base">checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- cart Panel -->
+    <div class="leftPanel">
+        <button type="button" class="material-symbols-outlined closeBtn">
+            close
+        </button>
+        <ul>
+            <li><button type="button" data-panel="shopPanel">SHOP</button></li>
+            <li><button type="button" data-panel="ourstoryPanel">OUR STORY</button></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <header>
+        <ol>
+            <li><a href="list_clearance.html">SHOP CLIEARANCE BEFORE ITS GONE</a></li>
+            <li><a href="location.html">MAKE AN APPOINTMENT AT YOUR LOCAL DESIGN CENTER</a></li>
+            <li><a href="list_clearance.html">SHOP CLIEARANCE BEFORE ITS GONE</a></li>
+            <li><a href="location.html">MAKE AN APPOINTMENT AT YOUR LOCAL DESIGN CENTER</a></li>
+        </ol>
+        <!-- banner -->
+        <h1><a href="index_after.html"><img src="images/logo.png" alt="welcome to Ethan Allen"></a></h1>
+        <button type="button" class="material-symbols-outlined mui" data-panel="leftPanel">menu</button>
+        <nav>
+            <ul>
+                <li>
+                    <button type="button" data-panel="shopPanel">SHOP</button>
+                </li>
+                <li>
+                    <button type="button" data-panel="ourstoryPanel">OUR STORY</button>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="material-symbols-outlined mui">more</button>
+        <ul>
+            <li>
+                <button type="button" data-panel="searchPanel">
+                    <span>SEARCH</span>
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </li>
+            <li>
+                <a href="location.html" class="material-symbols-outlined">location_on</a>
+            </li>
+            <li>
+                <a href="my_account.html" class="material-symbols-outlined">account_circle</a>
+            </li>
+            <li>
+                <button type="button" class="material-symbols-outlined" data-panel="cartPanel">shopping_cart</button>
+                <sup>99</sup>
+            </li>
+            <li>
+                <button type="button" class="material-symbols-outlined closeBtn">close</button>
+            </li>
+        </ul>
+    </header>
+    <!-- header -->
+    <section class="legalContainer">
+        <h2>Privacy Policy</h2>
+        <div>
+            <p>Ethan Allen, Inc. (the “Company” or “we”) has developed this privacy policy out of respect for the privacy of our customers, visitors to our website, job applicants, and independent contractors. This policy describes the personal information we collect, use, and disclose about individual consumers, applicants, and contractors who visit or interact with this website, visit any of our offices, stores, facilities or locations, purchase or inquire about any of our products or services, contract with us to provide services, apply for a position of employment, or otherwise interact or do business with us.</p>
+            <p>Whenever you visit our website, we will collect some information from you automatically simply by you visiting and navigating through this site, and some voluntarily when you submit information using a form on the website, utilize the Live Chat feature on our website, enroll in or subscribe to our newsletter or marketing communications, request information, or use any of the other interactive portions of our website. Through this website, we will collect information that can identify you and/or your activity. Additionally, whenever you communicate, interact or do business with us, whether online or at any of our physical locations or facilities, or whether you are contracted to perform services for us or apply for a position of employment, we will be collecting personal information from you or about you in the course of our interaction or dealings with you.</p>
+            <p>This policy does not apply to our current and former employees and their family members, dependents, and beneficiaries; if you are a California resident who is a current or former employee of the Company or a family member, dependent, or beneficiary of any of our current or former employees, you may request access to our Employee Privacy Policy by sending an email to <a href="mailto:privacy@ethanallen.com">privacy@ethanallen.com</a>.</p>
+        </div>
+        <div>
+            <h3>Consent to Share Personal Information When Using Live Chat Function</h3>
+            <p>By using the Live Chat feature, you consent to our collection and analysis of all personal information provided. We utilize a vendor called LivePerson (“Chat Vendor”) to process, analyze, and store the contents of the chat on our behalf. The Chat Vendor may provide information in the chat to marketing partners and/or their affiliated entities, distributors, agents, and contractors. The Chat Vendor may also use the information analyzed or processed from the chat for targeted advertising purposes. For more information on how the Chat Vendor may use or disclose your personal information, please review their privacy policy HERE. By using these forms and features, you direct the Company to disclose to and share with the Chat Vendor any personal information you provide in the chat. You cannot use the Live Chat feature without consenting to these terms and to the disclosure of your personal information to the Chat Vendor who may use or disclose the information for their own commercial purposes. If you do not consent to such disclosure, please do NOT use the Live Chat feature.</p>
+        </div>
+        <div>
+            <h3>Categories of Sensitive Personal Information Collected or Processed:</h3>
+            <p>Of the above categories of Personal Information, the following are categories of Sensitive Personal Information the Company may collect from or about consumers, independent contractors, or applicants:</p>
+            <ol>
+                <li>Personal Identifiers (social security number, driver’s license or state identification card number, passport number)</li>
+                <li>Account Information (your Company account log-in, in combination with any required security or access code, password, or credentials allowing access to the account)</li>
+                <li>Protected Classifications (racial or ethnic origin, religious or philosophical beliefs, union membership, or sexual orientation)</li>
+                <li>Biometric or Genetic Information (used for the purpose of uniquely identifying you)</li>
+                <li>Medical and Health Information</li>
+                <li>Geolocation Data (IP address and/or GPS location, latitude & longitude)</li>
+                <li>Contents of Personal Communications (contents of mail, email, and text messages where the Company is not the intended recipient)</li>
+                <li>Personal data revealing race, racial or ethnic origin, religious beliefs, sex, sexual orientation, gender, age, military status, familial status, disability, or medical, mental, or physical health condition or diagnosis.</li>
+                <li>Personal data collected from a known child</li>
+            </ol>
+            <div>
+                <h4>Personal information does not include:</h4>
+                <ul>
+                    <li>Publicly available information from government records.</li>
+                    <li>Information that a business has a reasonable basis to believe is lawfully made available to the general public by the consumer, independent contractor, or applicant, or from widely distributed media.</li>
+                    <li>Information made available by a person to whom the consumer, independent contractor, or applicant has disclosed the information if the consumer, independent contractor, or applicant has not restricted the information to a specific audience.</li>
+                    <li>Deidentified or aggregated information.</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3>We may collect your personal information from the following sources:</h3>
+            <ul>
+                <li>You the consumer, independent contractor, or job applicant, when you visit the website and voluntarily submit information through forms on the website or social media, when you visit any of our stores or physical locations, when you purchase or inquire about any of our products or services, when you utilize the Live Chat feature on the website, when you enter into a contract to perform services for us, or when you apply for a position of employment</li>
+                <li>Our employees, contractors, vendors, suppliers, guests, visitors, other consumers, and customers based on your interactions with them (if any)</li>
+                <li>We utilize cookies to automatically collect information about our website visitors</li>
+                <li>Surveillance cameras at our physical locations</li>
+                <li>Lead generators and referral sources</li>
+                <li>Credit and consumer reporting agencies</li>
+                <li>HR support vendors</li>
+                <li>Recruiters</li>
+                <li>Staffing agencies</li>
+                <li>Social media platforms</li>
+                <li>Company-issued computers, electronic devices, and vehicles</li>
+                <li>Company systems, networks, software applications, and databases you log into or use</li>
+                <li>Company systems, networks, software applications, and databases you log into or use in the course of applying for a position with the Company, interacting with our website, or otherwise interacting with us in any other capacity, including from vendors the Company engages to manage or host such systems, networks, applications or databases</li>
+                <li>Personal references and former employers (if you are a job applicant)</li>
+                <li>Schools, universities, or other educational institutions which you attended (if you are a job applicant)</li>
+                <li>From friends, family, or colleagues who choose to email you job postings that they think you may be interested in from our application platform or careers page</li>
+            </ul>
+        </div>
+        <div>
+            <h3>We may disclose, sell, or share your personal information to/with the following categories of service providers, contractors, or third parties:</h3>
+            <ul>
+                <li>Financial institutions</li>
+                <li>Lead providers</li>
+                <li>Government agencies</li>
+                <li>Promotional or other fulfilment vendors</li>
+                <li>Marketing support vendors and vendors that support managing or hosting the website and the Chat function on the website</li>
+                <li>Transaction support vendors (e.g., check guaranty, payment processors)</li>
+                <li>Data analytics vendors</li>
+                <li>Professional employer organizations, recruiting firms, and/or staffing agencies</li>
+                <li>Consumer reporting agencies or credit reporting agencies</li>
+                <li>Talent acquisition management systems, and other vendors providing services for purposes of our human resources information system (HRIS) and management of job applicant data and recruiting process</li>
+                <li>Security and risk management vendors, including IT, cybersecurity, and privacy vendors and consultants</li>
+                <li>Corporate customers (meaning an entity, as opposed to a natural person, that purchases any of our products)</li>
+            </ul>
+        </div>
+        <div>
+            <h3>We may collect your personal information for the following business purposes:</h3>
+            <ol>
+                <li>To fulfill or meet the purpose for which you provided the information.</li>
+                <li>To process and submit financing applications, including to apply for credit, or credit pre-qualification.</li>
+                <li>To process, complete, and maintain records on transactions.</li>
+                <li>To provide warranty coverage on products and services.</li>
+                <li>To retain your selection for Text opt in/opt out to ensure customers who opted out are not sent any text messages.</li>
+                <li>To provide and communicate recall notifications to customers.</li>
+                <li>To schedule, manage and keep track of customer appointments.</li>
+                <li>To complete appraisals.</li>
+                <li>To maintain records of when customers decline a service or sale.</li>
+                <li>To respond to consumer inquiries, including requests for information, customer support online, Live Chat on the website, phone calls, and in-store inquiries.</li>
+                <li>To provide interest-based and targeted advertising.</li>
+                <li>To contact you by email, telephone calls, mail, SMS, or other equivalent forms of communication regarding updates or informative communications related to the functionalities, services, or other information you requested or asked the Company to provide to you.</li>
+                <li>To improve user experience on our website.</li>
+                <li>To understand the demographics of our website visitors.</li>
+                <li>To detect security incidents.</li>
+                <li>To debug, identify, and repair errors that impair existing intended functionality of our website.</li>
+                <li>To protect against malicious or illegal activity and prosecute those responsible.</li>
+                <li>To verify and respond to consumer requests.</li>
+                <li>To prevent identity theft.</li>
+                <li>
+                    <strong>Job applicant purposes: </strong>
+                    <ol>
+                        <li>To fulfill or meet the purpose for which you provided the information. For example, if you share your name and contact information to apply for a job with the Company, we will use that Personal Information in connection with your candidacy for employment.</li>
+                        <li>To comply with local, state, and federal law and regulations requiring employers to maintain certain records, as well as local, state, and federal law, regulations, ordinances, guidelines, and orders relating to infectious diseases, pandemics, outbreaks, and public health emergencies, including applicable reporting requirements.</li>
+                        <li>To evaluate your job application and candidacy for employment.</li>
+                        <li>To obtain and verify background check and references.</li>
+                        <li>To communicate with you regarding your candidacy for employment.</li>
+                        <li>To permit you to create a job applicant profile, which you can use for filling out future applications if you do not get the job you are apply for.</li>
+                        <li>To keep your application on file even if you did not get the job applied for, in case there is another position for which we want to consider you as a candidate even if you do not formally apply.</li>
+                        <li>To evaluate and improve our recruiting methods and strategies.</li>
+                        <li>To engage in lawful monitoring of job applicant activities and communications when they are on Company premises, or utilizing Company internet and WiFi connections, computers, networks, devices, software applications or systems.</li>
+                        <li>To engage in corporate transactions requiring review or disclosure of job applicant records subject to non-disclosure agreements, such as for evaluating potential mergers and acquisitions of the Company.</li>
+                        <li>To evaluate, assess, and manage the Company’s business relationship with vendors, service providers, and contractors that provide services to the Company related to recruiting or processing of data from or about job applicants.</li>
+                        <li>To improve job applicant experience on Company computers, networks, devices, software applications or systems, and to debug, identify, and repair errors that impair existing intended functionality of our systems.</li>
+                        <li>To reduce the risk of spreading infectious diseases in or through the workplace.</li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Independent contractor purposes:</strong>
+                    <ol>
+                        <li>To fulfill or meet the purpose for which you provided the information.</li>
+                        <li>To comply with state and federal law and regulations requiring businesses to maintain certain records (accident or safety records, and tax records/1099 forms).</li>
+                        <li>To engage the services of independent contractors and compensate them for services.</li>
+                        <li>To evaluate, make, and communicate decisions regarding an independent contractor, including decisions to hire and/or terminate.</li>
+                        <li>To grant independent contractors access to secure Company facilities, systems, networks, computers, and equipment, and maintain information on who accessed such facilities, systems, networks, computers, and equipment, and what they did therein or thereon.</li>
+                        <li>To implement, monitor, and manage electronic security measures on independent contractor devices that are used to access Company networks and systems.</li>
+                        <li>To evaluate, assess, and manage the Company’s business relationship with vendors, service providers, and contractors that provide services to the Company.</li>
+                        <li>To improve user experience on Company computers, networks, devices, software applications or systems, and to debug, identify, and repair errors that impair existing intended functionality of our systems.</li>
+                        <li>To reduce the risk of spreading infectious diseases in or through the workplace.</li>
+                    </ol>
+                </li>
+            </ol>
+            <p>We may disclose your personal information for any one or more of the business purposes identified above.</p>
+            <p>We do NOT and will not sell or share your personal information in exchange for monetary consideration. However, we may sell for other valuable consideration or share for cross-context behavioral advertising some of your personal information with third parties, as noted in the table above.</p>
+            <div>
+                <h4>We may sell or share your personal information for the following business purposes:</h4>
+                <ol>
+                    <li>To provide interest based and targeted advertising</li>
+                </ol>
+                <p>Other than these exceptions, we do not and will not disclose your personal information to any third party in exchange for monetary or other valuable consideration or share your personal information for cross-context behavioral advertising.</p>
+            </div>
+        </div>
+        <div>
+            <h3>Opt-Out Preference Signals</h3>
+            <p>Opt-out preference signals provide consumers with a simple and easy-to-use method by which to exercise the right to opt-out of the selling and sharing of their information. Global Privacy Controls (GPC) or Universal Opt-Out Mechanism (UOOM) are a user-enabled opt-out preference signal which can communicate a user’s “Do Not Sell or Share” request on behalf of the person or device. We will process opt-out preferences from GPC and UOOM signals which are in formats commonly used and recognized by businesses, such as an HTTP field header. We will treat a consumer’s use of GPCs or UOOMs as a valid request to opt-out of the selling and sharing of information for that browser. We currently do not connect browser use to particular consumers and, as such, you will need to use GPCs or UOOMs on all browsers in which you access our website and use our opt-out form to opt-out of offline sales.</p>
+            <p>Do Not Track (DNT) is a privacy preference that users can set if they do not want web services to collect information about their online activity. We do not respond to DNT signals or other mechanisms (with the exception of GPCs andUOOMs) that provide a choice regarding the collection of personal information about activities over time and across different websites or online services. We encourage users who have DNTs to use GPCs or UOOMs.</p>
+            <div>
+                <h4>We may collect your personal information for the following business purposes:</h4>
+                <ol>
+                    <li>To perform the services or provide the goods reasonably expected by an average consumer who requests those goods or services.</li>
+                    <li>To detect security incidents that compromise the availability, authenticity, integrity, and confidentiality of stored or transmitted personal information.</li>
+                    <li>To resist malicious, deceptive, fraudulent, or illegal actions directed at the business and to prosecute those responsible for those actions.</li>
+                    <li>To ensure the physical safety of natural persons.</li>
+                    <li>For short-term, transient use.</li>
+                    <li>To perform services on behalf of the Company.</li>
+                    <li>To verify or maintain the quality or safety of a product, service or device that is owned, manufactured, manufactured for, or controlled by the Company, and to improve, upgrade, or enhance the service or device that is owned, manufactured by, manufactured for, or controlled by the Company.</li>
+                    <li>For purposes that do not involve inferring characteristics about the consumers, contractors, and applicants.</li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <h3>Retention of Personal Information</h3>
+            <p>We will retain each category of personal information in accordance with our established data retention schedule as indicated above. Some of the retention periods in the retention schedule above are measured from a particular point in time that has not occurred yet, such as the end of employment or end of a relationship (whether business, contractual, or transactional) plus a certain number of years. Where no particular event is defined in the retention schedule as the point from which the retention period is measured, we will measure the retention period from either (1) the date the record or data was collected, created, or last modified, (2) the date of the particular transaction to which the record or data pertains, or (3) another triggering event that is determined to be reasonable and appropriate based on the nature of the data and the legal/business needs for its continued use.</p>
+            <p>In deciding how long to retain each category of personal information that we collect, we consider many criteria, including, but not limited to: the business purposes for which the Personal Information was collected; relevant federal, state and local recordkeeping laws; applicable statute of limitations for claims to which the information may be relevant; and legal preservation of evidence obligations.</p>
+            <p>We apply our data retention procedures on an annual basis to determine if the business purposes for collecting the personal information, and legal reasons for retaining the personal information, have both expired. If so, we will purge the information in a secure manner.</p>
+        </div>
+        <div>
+            <h3>Third Party Vendors</h3>
+            <p>We may use other companies and individuals to perform certain functions on our behalf. Examples include administering e-mail services and running special promotions. Such parties only have access to the personal information needed to perform these functions and may not use or store the information for any other purpose. Subscribers or site visitors will never receive unsolicited e-mail messages from vendors working on our behalf.</p>
+        </div>
+        <div>
+            <h3>Business Transfers</h3>
+            <p>In the event we sell or transfer a particular portion of its business assets, information of consumers, contractors and applicants may be one of the business assets transferred as part of the transaction. If substantially all of our assets are acquired, information of consumers, contractors and applicants may be transferred as part of the acquisition.</p>
+        </div>
+        <div>
+            <h3>Compliance with Law and Safety</h3>
+            <p>We may disclose specific personal and/or Sensitive Personal Information based on a good faith belief that such disclosure is necessary to comply with or conform to the law or that such disclosure is necessary to protect our employees or the public.</p>
+        </div>
+        <div>
+            <h3>Use of Cookies and Other Tracking Technologies</h3>
+            <p>Cookies are small files that a website may transfer to a user’s computer that reside there for either the duration of the browsing session (session cookies) or on a permanent, until deleted, basis (persistent cookies) that may be used to identify a user, a user’s machine, or a user’s behavior. We make use of cookies under the following circumstances and for the following reasons:</p>
+            <ul>
+                <li>Provide you with services available through the website and to enable you to use some of its features</li>
+                <li>Authenticate users and prevent fraudulent use of user accounts</li>
+                <li>Identify if users have accepted the use of cookies on the website</li>
+                <li>Compile data about website traffic and how users use the website to offer a better website experience</li>
+                <li>Understand and save visitor preferences for future visits, such as remembering your login details or language preference, to provide you with a more personal experience and to avoid you having to re-enter your preferences every time you use the website</li>
+                <li>Track your browsing habits to enable us to show advertising which is more likely to be of interest to you, including advertising by third parties on our website</li>
+            </ul>
+            <p>You may delete cookies from your web browser at any time or block cookies on your equipment, but this may affect the functioning of or even block the website. You can prevent saving of cookies (disable and delete them) by changing your browser settings accordingly at any time. It is possible that some functions will not be available on our website when use of cookies is deactivated. Check the settings of your browser. Below you can find some guidance:</p>
+            <ul>
+                <li>Safari</li>
+                <li>Opera</li>
+                <li>Internet Explorer</li>
+                <li>Google Chrome</li>
+                <li>Mozilla</li>
+            </ul>
+            <p>Do Not Track (DNT) is a privacy preference that users can set if they do not want web services to collect information about their online activity. We do not respond to DNT signals (with the exception of Global Privacy Controls as explained above in the section of this policy on “Opt-Out Preference Signals”).</p>
+        </div>
+        <div>
+            <h3>External Links</h3>
+            <p>Our website contains links to other sites. We are not responsible for the privacy practices or the content of such websites. To help ensure the protection of your privacy, we recommend that you review the Privacy Policy of any site you visit via a link from our website.</p>
+        </div>
+        <div>
+            <h3>Passwords</h3>
+            <p>The personal data record created through your registration with our website can only be accessed with the unique password associated with that record. To protect the integrity of the information contained in this record, you should not disclose or otherwise reveal your password to third parties.</p>
+        </div>
+        <div>
+            <h3>Children Under the Age of 16</h3>
+            <p>We do not knowingly sell or share the personal information of consumers under 16 years of age.</p>
+        </div>
+        <div>
+            <h3>How We Protect the Information that We Collect</h3>
+            <p>The protection of the information that we collect about visitors to this website is of the utmost importance to us and we take every reasonable measure to ensure that protection, including:</p>
+            <ul>
+                <li>We use commercially reasonable tools and techniques to protect against unauthorized access to our systems.</li>
+                <li>We restrict access to private information to those who need such access in the course of their duties for us.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>International Visitors</h3>
+            <p>We do not target, market to, or offer our products or services to consumers outside of the United States. You agree not to submit your personally identifiable information through the website if you reside outside the United States.</p>
+        </div>
+        <div>
+            <h3>Consumer Rights</h3>
+            <p>Based on your state of residence, you may have some or all of the following rights: </p>
+            <ol>
+                <li>Right to Know. The right to request, (1) the categories of personal information we have collected about you, (2) the categories of sources from which the personal information was collected, (3) the business or commercial purpose for collecting, selling, or sharing this information, (4) the categories of third parties with whom we share or have shared your personal information, (5) as applicable, the categories of personal information that we have sold or shared about you and the categories of third parties to whom the personal information was sold or shared, by category or categories of personal information for each category of third parties to whom the personal information was sold or shared, and (6) the categories of personal information that we have disclosed about you for a business purpose and the categories of persons to whom it was disclosed for a business purpose;</li>
+                <li>Right to Access. The right to request that we disclose to you, free of charge, the specific pieces of personal information we have collected about you;</li>
+                <li>Right to Delete. The right to request that we delete personal information that we collected from you, subject to certain exceptions;</li>
+                <li>Right to Correct. The right to request that we correct inaccurate personal information (to the extent such an inaccuracy exists) that we maintain about you;</li>
+                <li>Right to Opt-Out. The right to opt-out of certain uses of your personal information;</li>
+                <li>Right to Limit. The right to limit the use or disclosure of your sensitive personal information; we maintain about you;</li>
+                <li>The right to designate an authorized agent to submit one of the above requests on your behalf. To do so, you must either (a) execute a valid, verifiable, and notarized power of attorney or (b) provide other written, signed authorization that we can then verify;</li>
+                <li>The right to not be discriminated or retaliated against for exercising any of the above rights;</li>
+                <li>The right to appeal our refusal to take action on a request.</li>
+            </ol>
+            <div>
+                <h4>You can submit any of the above types of consumer requests through either of the 2 options below:</h4>
+                <ol>
+                    <li>Submit an online request on our website at <a href="https://privacy.ethanallen.com/consumer/make_request" target="_blank">https://privacy.ethanallen.com/consumer/make_request</a></li>
+                    <li>2.	Call our privacy toll-free line at <a href="tel:+8883243571">888-324-3571</a>.</li>
+                </ol>
+            </div>
+            <div>
+                <h4>How We Will Verify That it is Really You Submitting the Request:</h4>
+                <p>When you submit a Right to Know, Right to Access, Right to Delete, or Right to Correct request through one of the methods provided above, we will ask you to provide some information in order to verify your identity and respond to your request. Specifically, we will ask you to verify information that can be used to link your identity to particular records in our possession, which depends on the nature of your relationship and interaction with us.</p>
+            </div>
+            <div>
+                <h4>Cailfornia Shine the Light:</h4>
+                <p>The California Civil Code permits California Residents with whom we have an established business relationship to request that we provide you with a list of certain categories of personal information that we have disclosed to third parties for their direct marketing purposes during the preceding calendar year. To make such a request, please send an email to privacy@ethanallen.com, or write to us at the address listed below. Please mention that you are making a “California Shine the Light” inquiry.</p>
+            </div>
+        </div>
+        <div>
+            <h3>Consent to Terms and Conditions</h3>
+            <p>By using this website, you consent to all terms and conditions expressed in this Privacy Policy.</p>
+        </div>
+        <div>
+            <h3>Changes to Our Privacy Policy</h3>
+            <p>As our services evolve and we perceive the need or desirability of using information collected in other ways, we may from time to time amend this Privacy Policy. We encourage you to check our website frequently to see the current Privacy Policy in effect and any changes that may have been made to them. If we make material changes to this Privacy Policy, we will post the revised Privacy Policy and the revised effective date on this website. Please check back here periodically or contact us at the address listed at the end of this Privacy Policy.</p>
+        </div>
+        <div>
+            <h3>Consumers With Disabilities</h3>
+            <p>This policy is in a form that is accessible to consumers with disabilities.</p>
+        </div>
+        <div>
+            <h3>Questions About the Policy</h3>
+            <p>This website is owned and operated by Ethan Allen. If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@ethanallen.com">privacy@ethanallen.com</a> or call <a href="tel:+8883242572">888-324-2572</a>.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Stay In Touch</h2>
+            <p>For the latest Ethan Allen news, enter your email address.</p>
+            <form>
+                <input type="email" id="emailInput" name="userEmail" placeholder="email@example.com" title="insert your email" required>
+                <button type="submit" class="btn arrow">SUBMIT</button>
+            </form>
+            <ul>
+                <li><a href="https://www.facebook.com/ethanallendesign" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/ethanallen/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/ethanallen/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.linkedin.com/company/ethan-allen" target="_blank">linkedin</a></li>
+            </ul>
+        </div>
+        <!-- stay in touch -->
+        <div>
+            <div>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="list_living_shopAll.html">Living</a></li>
+                    <li><a href="list_dining_shopAll.html">Dining</a></li>
+                    <li><a href="list_bedroom_shopAll.html">Bedroom</a></li>
+                    <li><a href="list_homeOffice_shopAll.html">Home Office</a></li>
+                    <li><a href="list_lighting_shopAll.html">Lighting</a></li>
+                    <li><a href="list_homeDecor_shopAll.html">Home Decor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>COMPANY</h2>
+                <ul>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="hospitality.html">Hospitality</a></li>
+                    <li><a href="social_responsibility.html">Social Responsibility</a></li>
+                    <li><a href="business_development.html">Business Development</a></li>
+                    <li><a href="digital_magazines.html">Digital Magazines</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CLIENT SERVICES</h2>
+                <ul>
+                    <li><a href="my_order.html">Order Tracking</a></li>
+                    <li><a href="shipping_premier.html">Shipping</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="mailing_list_preferences.html">Mailing List Preferences</a></li>
+                    <li><a href="email_preferences.html">Email Preferences</a></li>
+                    <li><a href="furniture_safety_initiative.html">Ethan Allen Furniture Safety Initiative</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="terms_conditions.html">Terms &amp; Conditions</a>
+                <span>©2024 Ethan Allen Global, Inc.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

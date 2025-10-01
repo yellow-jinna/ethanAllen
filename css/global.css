@@ -1,0 +1,1734 @@
+*{
+    font-family: "Afacad Flux";
+}
+body{
+    scroll-behavior: smooth;
+}
+
+.bgContent{
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgContent h2{
+    color: #fff; font-weight: 400;
+}
+.bgContent h2 + p{ 
+    color: #fff; font-weight: 400;
+}
+
+
+.toolTip{
+    margin-left: 5px; vertical-align: middle; 
+}
+.toolTip + .tooltipBox{
+    display: none; position: absolute;
+    padding: 20px; border-radius: 10px;
+    color: white; text-align: left;
+    background-color: #002b49;
+}
+.toolTip + .tooltipBox.active{
+    display: block;
+}
+.toolTip + .tooltipBox::after{
+    content: ""; display: block;
+    width: 0; height: 0;
+    position: absolute; top: 100%; left: 10%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #002b49;
+}
+.toolTip + .tooltipBox b{
+    display: block; margin-bottom: 10px;
+}
+
+.customSelect{
+    position: relative;
+}
+.customSelect span{
+    display: block; 
+    padding: 0 25px; border: 1px solid #b9b9b9; box-sizing: border-box;
+    color: #b9b9b9; font-weight: 400;
+    border-radius: 5px;
+}
+.customSelect span.active{
+    border-color: #000;
+}
+.customSelect span.color{
+    color: #2d2d2d;
+}
+.customSelect span:after{
+    content: ''; display: block; width: 15px; height: 15px;
+    position: absolute; right: 25px; top: 25px;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+.customSelect span.active:after{
+    transform: rotate(-90deg);
+}
+.customSelect .selectOpt{
+    display: none; width: 100%; line-height: 18px;
+    position: absolute; z-index: 100;
+    padding: 20px 25px; box-sizing: border-box;
+    border-top: 1px solid #000; 
+    border-right: 1px solid #b9b9b9; 
+    border-bottom: 1px solid #b9b9b9; 
+    border-left: 1px solid #b9b9b9; 
+    background-color: #fff;
+}
+.customSelect .selectOpt.active{
+    display: block;
+}
+.customSelect .selectOpt li{
+    display: block;
+    color: #2d2d2d; font-weight: 300;
+    cursor: pointer;
+}
+.customSelect .selectOpt li.active,
+.customSelect .selectOpt li:hover{
+    font-weight: 400; 
+}
+.customSelect .selectOpt li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+input{
+    background-color: transparent;
+    border: none; border-radius: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn{
+    display: block; border-style: solid; border-width: 1px; box-sizing: border-box;
+    font-weight: 700;
+}
+.btn.base{
+    text-align: center; transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    padding: 0 2%; box-sizing: border-box;
+}
+.btn.arrow{
+    position: relative; transition: border-color 0.5s ease-in-out;
+}
+.btn.arrow::after{
+    content: ''; display: block; position: absolute; top: 50%; transform: translateY(-50%);
+    width: 15px; height: 15px;
+    background-repeat: no-repeat; background-size: cover;
+    transition: right 0.5s ease-in-out;
+}
+.btnWrap{
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+}
+mark.label{
+    display: inline-block;
+    width: 30%; text-align: center;
+    font-weight: 400; font-style: normal; 
+}
+mark.label.base{
+    background-color: #f8f8f8; color: #000;
+}
+mark.label.sale{
+    background-color: #900603; color: #fff;
+}
+
+[class$='Panel']{
+    display: none;
+}
+[class$='Panel'].active{
+    display: block;
+}
+[class$='Popup']{
+    display: none;
+}
+[class$='Popup'].active{
+    display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+    header,
+    .productSlider,
+    main div:nth-of-type(5),
+    section.listContainer > div:nth-of-type(2),
+    .detailContainer,
+    .alsoLike,
+    .signContainer,
+    .myAccountContainer,
+    .myAddressContainer,
+    .myOrderContainer,
+    .messageContainer > *,
+    .locationContainer,
+    .hospiContainer > div:not(.bgContent),
+    .socialContainer > div:last-of-type,
+    .businessContainer > div:not(:first-of-type),
+    .magContainer > ul{
+        padding: 0 3%; box-sizing: border-box;
+    }
+
+    .btn{
+        line-height: 60px; font-size: 16px; letter-spacing: 1.6px;
+    }
+    mark.label{
+        max-width: 130px; min-width: 120px;
+        font-size: 15px; letter-spacing: 1.5px; line-height: 36px;
+    }
+    .bgContent{
+        padding: 400px 3% 30px; 
+    }
+    .bgContent h2{
+        font-size: 50px;
+    }
+    .bgContent h2 + p{
+        margin-top: 15px;
+        font-size: 20px; line-height: 26px;
+    }
+    main,
+    .alsoLike,
+    [class$="Container"]{
+        margin-bottom: 90px;
+    }
+    .toolTip{
+        font-size: 18px; 
+    }
+    .toolTip + .tooltipBox{
+        width: 150px;
+        top: -100px; left: 49px;
+        font-size: 14px;
+    }
+    .customSelect span{
+        font-size: 16px; line-height: 20px; padding: 20px 25px;
+    }
+    .customSelect span:after{
+        background: url("../images/icon_arrow.png") no-repeat center / 13px;
+    }
+    .customSelect .selectOpt{
+        top: 61px;
+    }
+    .customSelect .selectOpt li{
+        font-size: 16px; letter-spacing: 1.6px;
+    }
+
+    .shopPanel,
+    .ourstoryPanel{
+        position: fixed; top: 0; left: 0; z-index: 1000; 
+        width: 100%; height: 100%; overflow-y: scroll;
+        padding: 30px 0; box-sizing: border-box; 
+        background-color: #fff; 
+    }
+    .shopPanel h2,
+    .ourstoryPanel h2{
+        display: flex; align-items: center; padding: 0 3% 30px;
+        font-size: 14px; font-weight: 700; letter-spacing: 1.4px; 
+        color: #2d2d2d; box-sizing: border-box;
+        border-bottom: 1px solid #000;
+    }
+    .shopPanel h2 button.material-symbols-outlined,
+    .ourstoryPanel h2 button.material-symbols-outlined{
+        font-size: 18px; margin-left: auto;
+    }
+    .shopPanel ul li,
+    .ourstoryPanel ul li{
+        display: block; line-height: 60px;
+    }
+    .shopPanel ul > li,
+    .shopPanel ol > li:not(:last-of-type),
+    .ourstoryPanel ul li{
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .shopPanel ol li:first-of-type{
+        border-top: 1px solid #b9b9b9;
+    }
+    .shopPanel ul > li a,
+    .shopPanel ul > li b,
+    .ourstoryPanel li a{
+        color: #2d2d2d;
+    }
+    .shopPanel ol > li a{
+        color: #9b9b9b;
+    }
+    .shopPanel li a,
+    .shopPanel li b,
+    .ourstoryPanel li a{
+        font-size: 16px; font-weight: 400; display: block;
+        transition: color 0.3s ease; padding: 0 3%;
+    }
+    .shopPanel li b{
+        cursor: pointer; 
+        background: url("../images/icon_add.png") no-repeat center right 3% / 18px;
+    }
+    .shopPanel li.active b{
+        cursor: pointer; 
+        background: url("../images/icon_remove.png") no-repeat center right 3% / 18px;
+    }
+    .shopPanel ul > li:last-of-type a{
+        color: #900603;
+    }
+    .shopPanel ol{
+        display: none; background-color: #f9f9f9;
+    }
+    .shopPanel ul li ol.active{
+        display: block;
+    }
+    /* shopPanel, ourstoryPanel Fin */
+
+    .searchPanel{
+        position: fixed; top: 0; right: 0; z-index: 100; 
+        width: 100%; height: 100%; overflow-y: scroll; 
+        padding-top: 30px;
+        background-color: #fff; 
+    }
+    .searchPanel button.material-symbols-outlined{
+        display: block;
+        margin: 0 0 30px auto;
+        padding-right: 3%; box-sizing: border-box;
+        font-size: 18px;
+    }
+    .searchPanel div{ 
+        display: flex; align-items: center;
+        padding: 0 5% 25px; box-sizing: border-box;
+        border-bottom: 1px solid black; 
+    }
+    .searchPanel div span.material-symbols-outlined{
+        flex: 0 0 2%;
+        color: #b9b9b9; font-size: 18px;
+    }
+    .searchPanel div input{
+        flex: 1; margin-left: 10px; 
+        color: #2d2d2d; font-size: 18px; font-weight: 300;
+    }
+    .searchPanel div input::placeholder{
+        color: #b9b9b9;
+    }
+    /* serchPanel Fin */
+
+    .cartPanel{
+        position: fixed; top: 0; right: 0; z-index: 100; 
+        width: 100%; height: 100vh; overflow-y: scroll; 
+        background-color: #fff;
+    }
+    .cartPanel h2{
+        display: flex; align-items: center; 
+        padding: 20px 3%; box-sizing: border-box;
+        border-bottom: 1px solid #b9b9b9;
+        color: #2d2d2d; font-size: 18px; font-weight: 400;  
+    }
+    .cartPanel h2 button.material-symbols-outlined{
+        margin-left: auto;
+        font-size: 18px;
+    }
+    .cartPanel div.emptyCart{
+        display: none;
+    }
+    .cartPanel div.emptyCart.active{
+        display: block;
+    }
+    .cartPanel div.emptyCart{
+        padding-top: 80px; text-align: center;
+    }
+    .cartPanel div.emptyCart h3{
+        margin-bottom: 20px;
+        color: #2d2d2d; font-size: 20px; font-weight: 400;
+    }
+    .cartPanel div.emptyCart p{
+        margin-bottom: 40px;
+        color: #b9b9b9; font-size: 16px; font-weight: 300;
+    }
+    .cartPanel div.emptyCart a{
+        margin: 0 auto;
+        width: 80%; max-width: 200px;
+        border-color: #b9b9b9;
+        color: #2d2d2d;
+    }
+    .cartPanel .fillCart{
+        display: none;
+    }
+    .cartPanel .fillCart.active{
+        display: block;
+    }
+    .cartPanel .fillCart{
+        padding: 0 3%; box-sizing: border-box; 
+    }
+    .cartPanel .fillCart > :first-child{
+        display: flex; flex-direction: column;
+        height: calc(100vh - 59px);
+    }  
+    .cartPanel .fillCart ul{
+        flex: 1; margin-bottom: 100px;
+    }
+    .cartPanel .fillCart ul li{
+        display: flex; align-items: center; flex-wrap: wrap; gap: 20px 10%;
+        position: relative; 
+        padding: 50px 0; 
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .cartPanel .fillCart ul li button.removeBtn{
+        position: absolute; right: 0; top: 25px; 
+        color: #b9b9b9; font-size: 15px; 
+    }
+    .cartPanel .fillCart ul li a{
+        flex: 0 0 42%; max-width: 160px;
+    }
+    .cartPanel .fillCart ul li img{
+        display: block; width: 100%;
+    }
+    .cartPanel .fillCart ul li dl{
+        flex: 0 0 48%;
+        font-size: 16px; font-weight: 400;
+    }
+    .cartPanel .fillCart ul li dl dt{
+        margin-bottom: 10px;
+        color: #2d2d2d; 
+    }
+    .cartPanel .fillCart ul li dl dd{
+        color: #b9b9b9; 
+    }
+    .cartPanel .fillCart ul li .qtyComponent{
+        flex: 0 0 42%; max-width: 160px;
+        border-bottom: 1px solid #b9b9b9; padding-bottom: 15px;
+        display: flex; align-items: center;
+    }
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"]{ 
+        width: 15px; height: 18px; flex-shrink: 0;
+        color: transparent; text-shadow: none;
+        background: no-repeat center / cover;
+        cursor: pointer;
+    }
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"].qtyRemove{
+        background-image: url("../images/icon_remove.png");
+    } 
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"].qtyAdd{
+        background-image: url("../images/icon_add.png");
+    }
+    .cartPanel .fillCart ul li .qtyComponent span{
+        flex: 1;
+        padding: 0 10%; box-sizing: border-box; text-align: center;
+        color: black; font-size: 16px; font-weight: 700; 
+    }
+    .cartPanel .fillCart ul li > strong{
+        flex: 0 0 48%;
+        color: #2d2d2d; font-size: 16px; font-weight: 400;
+    }
+    .cartPanel .fillCart ul + div{
+        height: 150px; padding-bottom: 25px;
+    }
+    .cartPanel .fillCart ul + div span{
+        display: flex; align-items: center;
+        margin-bottom: 30px; padding-bottom: 35px;
+        border-bottom: 1px solid #b9b9b9; 
+        color: black; font-size: 22px; font-weight: 400; 
+    }
+    .cartPanel .fillCart ul + div span strong{
+        margin-left: auto; 
+        font-weight: 400;
+    }
+    .cartPanel .fillCart button[type="submit"]{
+        width: 60%; 
+        margin-left: auto;
+        text-transform: uppercase;
+        background-color: #2d2d2d; color: #fff;
+    }
+    /* cartPanel Fin */
+    .leftPanel{
+        position: fixed; top: 0; left: 0; z-index: 900; 
+        width: 100%; height: 100%; overflow-y: scroll;
+        padding: 30px 3%; box-sizing: border-box; 
+        background-color: #fff; 
+    }
+    .leftPanel button.material-symbols-outlined{
+        display: block; margin-left: auto; font-size: 18px;
+    }
+    .leftPanel li{
+        display: block; margin-top: 50px; 
+        color: #2d2d2d; font-size: 18px; font-weight: 700; letter-spacing: 1.8px;
+    }
+    .leftPanel li *{
+        display: block; width: 100%;
+    }
+    header{
+        position: fixed; top: 0; left: 0; z-index: 90;
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding-top: 35px;
+        transition: background-color 0.3s ease;
+    }
+    header ol{
+        display: inline-block; 
+        position: absolute; top: 0; left: 0; 
+        overflow-x: hidden; white-space: nowrap; 
+        animation: scroll 20s linear infinite;
+        background: #fff;
+    }
+    header ol li{
+        display: inline-block; padding: 0 200px; box-sizing: border-box;
+        font-size: 14px; line-height: 35px;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0%);
+        }100%{
+            transform: translateX(-50%);
+        }
+    }
+    header ol:hover{
+        animation-play-state: paused;
+    }
+    /* banner Fin */
+    header h1{
+        position: absolute; left: 50%; transform: translateX(-50%);
+        width: 26%; min-width: 130px;
+    }
+    header h1 a{
+        display: block; margin: 0 auto;
+    }
+    header h1 a img{
+        display: block; width: 100%; 
+    }
+    header > button[type="button"]{
+        display: block; color: #fff;
+        padding: 15px 0;
+    }
+    header nav{
+        display: none;
+    }
+    header > ul{
+        display: none;
+    }
+    header > ul.active{
+        position: absolute; width: 100%; top: 40px; left: 0;
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 15px 20%; background-color: #fff; box-sizing: border-box;
+    }
+    header > ul li{
+        display: block;
+    }
+    header > ul li .material-symbols-outlined{
+        color: #000; font-size: 21px;
+    }
+    header > ul li:first-of-type span:first-of-type{
+        display: none;
+    }
+    header > ul li:first-of-type button{
+        display: block;
+    }    
+    header > ul li:nth-of-type(4){
+        position: relative;
+    }
+    header sup{
+        position: absolute; top: -8px; right: -8px;
+        width: 20px; height: 20px; border-radius: 50%; 
+        font-size: 11px; line-height: 20px; text-align: center; 
+        background-color: #f0f0f0;
+    }
+    /* header Fin */
+
+    header.active h1 img{
+        content: url('../images/logo_hover.png');
+    }
+    header.active{
+        background-color: #fff;
+    }
+    header.active > button{
+        color: #2d2d2d;
+    }
+    /* header hover Fin */
+
+    footer{
+        background-color: #f7f4ef; 
+    }
+    footer > div:first-child{
+        padding: 50px 3%; box-sizing: border-box;
+        background: url('../images/bg_footer.png') no-repeat left/cover; 
+        color: #fff;
+    }
+    footer > div:first-child h2{
+        margin-bottom: 30px;
+        font-size: 34px; font-weight: 400;
+    }
+    footer > div:first-child p{
+        margin-bottom: 50px;
+        font-size: 16px; font-weight: 300; line-height: 24px;
+    }
+    footer > div:first-child input[type="email"]{
+        display: block; width: 100%; max-width: 380px;
+        margin-bottom: 50px; padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0);
+        color: #fff; font-size: 16px; font-weight: 300;  
+        transition: border-color 0.5s ease;
+    }
+    footer > div:first-child input[type="email"]::placeholder{
+        color: rgba(255,255,255,0.5);
+    }
+    footer > div:first-child input[type="email"]:focus{
+        border-color: rgba(255,255,255,1);
+    }
+    footer > div:first-child .btn.arrow{
+        width: 100%; max-width: 180px;
+        padding: 0 30px; margin-bottom: 50px; 
+        border-color: rgba(255,255,255,0.3);
+    }
+    footer > div:first-child .btn.arrow:hover{
+        border-color: rgba(255,255,255,1);
+    }
+    footer > div:first-child .btn.arrow::after{
+        right: 30px;
+        background-image: url("../images/icon_arrow_white.png");
+    }
+    footer > div:first-child ul{
+        display: flex; justify-content: space-between; max-width: 200px;
+    }
+    footer > div:first-child ul li{
+        display: block; width: 18px; height: 18px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    footer > div:first-child ul li:first-of-type{
+        width: 9px;
+        background-image: url("../images/icon_facebook.png");
+    }
+    footer > div:first-child ul li:nth-last-of-type(2){
+        background-image: url("../images/icon_instagram.png");
+    }
+    footer > div:first-child ul li:nth-last-of-type(3){
+        background-image: url("../images/icon_pinterest.png");
+    }
+    footer > div:first-child ul li:last-of-type{
+        background-image: url("../images/icon_linkedIn.png");
+    }
+    footer > div:first-child ul li a{
+        display: block; 
+        text-indent: -9999px; line-height: 20px; 
+    }
+    footer > div:last-child{
+        padding: 30px 3% 35px; box-sizing: border-box;
+    }
+    footer > div:last-child div:not(:last-of-type){
+        padding-bottom: 30px; border-bottom: 1px solid #dfd7cd;
+    }
+    footer > div:last-child div:nth-of-type(1),
+    footer > div:last-child div:nth-of-type(2){
+        margin-bottom: 30px;
+    }
+    footer > div:last-child div h2{
+        color: #2d2d2d; font-size: 16px; font-weight: 700;
+        cursor: pointer;
+        background: url("../images/icon_add.png") no-repeat right center / 18px;
+    }
+    footer > div:last-child div h2.active{
+        background: url("../images/icon_remove.png") no-repeat right center / 18px;
+    }
+    footer > div:last-child div ul{
+        display: none;
+    }
+    footer > div:last-child div ul.active{
+        display: block;
+    }
+    footer > div:last-child div ul li{
+        display: block; margin-top: 30px;
+    }
+    footer > div:last-child a, span{
+        display: block;
+        color: #9b9b9b; font-size: 16px; font-weight: 300;
+        transition: color 0.3s ease;
+    }
+    footer > div:last-child a:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    footer > div:last-child span{
+        margin-top: 50px;
+    }
+    footer > div:last-child a:hover{
+        color: #2d2d2d;
+    }
+    footer > div:last-of-type div:last-of-type{
+        margin-top: 50px;
+    }
+    /* footer Fin */
+}
+/* mobile */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    header,
+    .productSlider,
+    main div:nth-of-type(5),
+    section.listContainer > div:nth-of-type(2),
+    .detailContainer,
+    .alsoLike,
+    .signContainer,
+    .myAccountContainer,
+    .myAddressContainer,
+    .myOrderContainer,
+    .messageContainer > *,
+    .locationContainer,
+    .hospiContainer > div:not(.bgContent),
+    .socialContainer > div:last-of-type,
+    .businessContainer > div:not(:first-of-type),
+    .magContainer > ul{
+        padding: 0 3%; box-sizing: border-box;
+    }
+
+    .btn{
+        line-height: 60px; font-size: 16px; letter-spacing: 1.6px;
+    }
+    mark.label{
+        max-width: 130px; min-width: 120px;
+        font-size: 15px; letter-spacing: 1.5px; line-height: 36px;
+    }
+    .bgContent{
+        padding: 400px 3% 30px; 
+    }
+    .bgContent h2{
+        font-size: 58px;
+    }
+    .bgContent h2 + p{
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    main,
+    .alsoLike,
+    [class$="Container"]{
+        margin-bottom: 100px;
+    }
+    .toolTip{
+        font-size: 18px; 
+    }
+    .toolTip + .tooltipBox{
+        width: 150px;
+        top: -90px; left: 49px;
+        font-size: 14px;
+    }
+    .customSelect span{
+        font-size: 16px; line-height: 60px;
+    }
+    .customSelect span:after{
+        background: url("../images/icon_arrow.png") no-repeat center / 13px;
+    }
+    .customSelect .selectOpt{
+        top: 61px;
+    }
+    .customSelect .selectOpt li{
+        font-size: 16px; letter-spacing: 1.6px;
+    }
+
+    .shopPanel,
+    .ourstoryPanel{
+        position: fixed; top: 0; left: 0; z-index: 1000; 
+        width: 50vw; height: 100%; overflow-y: scroll;
+        padding: 30px 0; box-sizing: border-box; 
+        background-color: #fff; 
+    }
+    .shopPanel h2,
+    .ourstoryPanel h2{
+        display: flex; align-items: center; padding: 0 3% 30px;
+        font-size: 16px; font-weight: 700; letter-spacing: 1.6px; 
+        color: #2d2d2d; box-sizing: border-box;
+        border-bottom: 1px solid #000;
+    }
+    .shopPanel h2 button.material-symbols-outlined,
+    .ourstoryPanel h2 button.material-symbols-outlined{
+        font-size: 18px; margin-left: auto;
+    }
+    .shopPanel ul li,
+    .ourstoryPanel ul li{
+        display: block; line-height: 65px;
+    }
+    .shopPanel ul > li,
+    .shopPanel ol > li:not(:last-of-type),
+    .ourstoryPanel ul li{
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .shopPanel ol li:first-of-type{
+        border-top: 1px solid #b9b9b9;
+    }
+    .shopPanel ul > li a,
+    .shopPanel ul > li b,
+    .ourstoryPanel li a{
+        color: #2d2d2d;
+    }
+    .shopPanel ol > li a{
+        color: #9b9b9b;
+    }
+    .shopPanel li a,
+    .shopPanel li b,
+    .ourstoryPanel li a{
+        font-size: 20px; font-weight: 400; display: block;
+        transition: color 0.3s ease; padding: 0 3%;
+    }
+    .shopPanel li b{
+        cursor: pointer; 
+        background: url("../images/icon_add.png") no-repeat center right 3% / 20px;
+    }
+    .shopPanel li.active b{
+        cursor: pointer; 
+        background: url("../images/icon_remove.png") no-repeat center right 3% / 20px;
+    }
+    .shopPanel ul > li:last-of-type a{
+        color: #900603;
+    }
+    .shopPanel ol{
+        display: none; background-color: #f9f9f9;
+    }
+    .shopPanel ul li ol.active{
+        display: block;
+    }
+    /* shopPanel, ourstoryPanel Fin */
+
+    .searchPanel{
+        position: fixed; top: 0; right: 0; z-index: 100; 
+        width: 100%; height: 100%; overflow-y: scroll; 
+        padding-top: 30px; max-width: 768px;
+        background-color: #fff; 
+    }
+    .searchPanel button.material-symbols-outlined{
+        display: block;
+        margin: 0 0 30px auto;
+        padding-right: 3%; box-sizing: border-box;
+        font-size: 18px;
+    }
+    .searchPanel div{ 
+        display: flex; align-items: center;
+        padding: 0 7% 35px; box-sizing: border-box;
+        border-bottom: 1px solid black; 
+    }
+    .searchPanel div span.material-symbols-outlined{
+        flex: 0 0 3%;
+        color: #b9b9b9; font-size: 20px;
+    }
+    .searchPanel div input{
+        flex: 1; margin-left: 10px; 
+        color: #2d2d2d; font-size: 20px; font-weight: 300;
+    }
+    .searchPanel div input::placeholder{
+        color: #b9b9b9;
+    }
+    /* serchPanel Fin */
+
+    .cartPanel{
+        position: fixed; top: 0; right: 0; z-index: 100; 
+        width: 100%; height: 100vh; overflow-y: scroll; max-width: 768px;
+        background-color: #fff;
+    }
+    .cartPanel h2{
+        display: flex; align-items: center; 
+        padding: 20px 3%; box-sizing: border-box;
+        border-bottom: 1px solid #b9b9b9;
+        color: #2d2d2d; font-size: 20px; font-weight: 400;  
+    }
+    .cartPanel h2 button.material-symbols-outlined{
+        margin-left: auto;
+        font-size: 18px;
+    }
+    .cartPanel div.emptyCart{
+        display: none;
+    }
+    .cartPanel div.emptyCart.active{
+        display: block;
+    }
+    .cartPanel div.emptyCart{
+        padding-top: 90px; text-align: center;
+    }
+    .cartPanel div.emptyCart h3{
+        margin-bottom: 20px;
+        color: #2d2d2d; font-size: 28px; font-weight: 400;
+    }
+    .cartPanel div.emptyCart p{
+        margin-bottom: 40px;
+        color: #b9b9b9; font-size: 18px; font-weight: 300;
+    }
+    .cartPanel div.emptyCart a{
+        margin: 0 auto;
+        width: 40%; max-width: 200px;
+        border-color: #b9b9b9;
+        color: #2d2d2d;
+    }
+    .cartPanel .fillCart{
+        display: none;
+    }
+    .cartPanel .fillCart.active{
+        display: block;
+    }
+    .cartPanel .fillCart{
+        padding: 0 3%; box-sizing: border-box; 
+    }
+    .cartPanel .fillCart > :first-child{
+        display: flex; flex-direction: column;
+        height: calc(100vh - 61px);
+    }  
+    .cartPanel .fillCart ul{
+        flex: 1; margin-bottom: 100px;
+    }
+    .cartPanel .fillCart ul li{
+        display: flex; align-items: center;
+        position: relative; 
+        padding: 50px 0; 
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .cartPanel .fillCart ul li button.removeBtn{
+        position: absolute; right: 0; top: 50px; 
+        color: #b9b9b9; font-size: 15px; 
+    }
+    .cartPanel .fillCart ul li a{
+        flex: 0 0 21%;
+    }
+    .cartPanel .fillCart ul li img{
+        display: block;
+        width: 100%; max-width: 186px; 
+    }
+    .cartPanel .fillCart ul li dl{
+        flex: 1;
+        margin-left: 1.5%;
+        font-size: 16px; font-weight: 400;
+    }
+    .cartPanel .fillCart ul li dl dt{
+        margin-bottom: 15px;
+        color: #2d2d2d; 
+    }
+    .cartPanel .fillCart ul li dl dd{
+        color: #b9b9b9; 
+    }
+    .cartPanel .fillCart ul li .qtyComponent{
+        flex: 0 0 16%; max-width: 120px;
+        border-bottom: 1px solid #b9b9b9; padding-bottom: 20px;
+        display: flex; align-items: center;
+    }
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"]{ 
+        width: 15px; height: 18px; flex-shrink: 0;
+        color: transparent; text-shadow: none;
+        background: no-repeat center / cover;
+        cursor: pointer;
+    }
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"].qtyRemove{
+        background-image: url("../images/icon_remove.png");
+    } 
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"].qtyAdd{
+        background-image: url("../images/icon_add.png");
+    }
+    .cartPanel .fillCart ul li .qtyComponent span{
+        flex: 1;
+        padding: 0 10%; box-sizing: border-box; text-align: center;
+        color: black; font-size: 16px; font-weight: 700; 
+    }
+    .cartPanel .fillCart ul li > strong{
+        flex: 0 0 18%;
+        text-align: right;
+        color: #2d2d2d; font-size: 16px; font-weight: 400;
+    }
+    .cartPanel .fillCart ul + div{
+        height: 184px; padding-bottom: 25px;
+    }
+    .cartPanel .fillCart ul + div span{
+        display: flex; align-items: center;
+        margin-bottom: 30px; padding-bottom: 35px;
+        border-bottom: 1px solid #b9b9b9; 
+        color: black; font-size: 22px; font-weight: 400; 
+    }
+    .cartPanel .fillCart ul + div span strong{
+        margin-left: auto; 
+        font-weight: 400;
+    }
+    .cartPanel .fillCart button[type="submit"]{
+        width: 50%; max-width: 300px;
+        margin-left: auto;
+        text-transform: uppercase;
+        background-color: #2d2d2d; color: #fff;
+    }
+    /* cartPanel Fin */
+    .leftPanel{
+        position: fixed; top: 0; left: 0; z-index: 900; 
+        width: 50vw; height: 100%; overflow-y: scroll;
+        padding: 30px 3%; box-sizing: border-box; 
+        background-color: #fff; 
+    }
+    .leftPanel button.material-symbols-outlined{
+        display: block; margin-left: auto; font-size: 18px;
+    }
+    .leftPanel li{
+        display: block; margin-top: 50px; 
+        color: #2d2d2d; font-size: 20px; font-weight: 700; letter-spacing: 1.35px;
+    }
+    .leftPanel li *{
+        display: block; width: 100%;
+    }
+    header{
+        position: fixed; top: 0; left: 0; z-index: 90;
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding-top: 40px;
+        transition: background-color 0.3s ease;
+    }
+    header ol{
+        display: inline-block;
+        position: absolute; top: 0; left: 0; 
+        overflow-x: hidden; white-space: nowrap;
+        animation: scroll 20s linear infinite;
+        background: #fff;
+    }
+    header ol li{
+        display: inline-block; padding: 0 500px; box-sizing: border-box;
+        font-size: 16px; line-height: 40px;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0%);
+        }100%{
+            transform: translateX(-50%);
+        }
+    }
+    header ol:hover{
+        animation-play-state: paused;
+    }
+    /* banner Fin */
+    header h1{
+        position: absolute; left: 50%; transform: translateX(-50%);
+        width: 26%;
+    }
+    header h1 a{
+        display: block; margin: 0 auto; max-width: 200px;
+    }
+    header h1 a img{
+        display: block; width: 100%; 
+    }
+    header > button[type="button"]{
+        display: block; color: #fff;
+    }
+    header > button[type="button"]:last-of-type{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    header > ul{
+        display: flex; align-items: center; justify-content: flex-end;
+        gap: 15%; padding: 24px 0;
+    }
+    header > ul li{
+        display: block;
+    }
+    header > ul li .material-symbols-outlined{
+        color: #fff; font-size: 22px;
+        transition: color 0.3s ease;
+    }
+    header > ul li:first-of-type span:first-of-type{
+        display: none;
+    }
+    header > ul li:first-of-type button{
+        display: block;
+    }    
+    header > ul li:nth-of-type(4){
+        position: relative;
+    }
+    header sup{
+        position: absolute; top: -8px; right: -8px;
+        width: 20px; height: 20px; border-radius: 50%; 
+        font-size: 11px; line-height: 20px; text-align: center; 
+        background-color: #fff;
+    }
+    header > ul li:nth-of-type(5){
+        display: none;
+    }
+    /* header Fin */
+
+    header.active h1 img{
+        content: url('../images/logo_hover.png');
+    }
+    header.active{
+        background-color: #fff;
+    }
+    header.active > button{
+        color: #2d2d2d;
+    }
+    header.active sup{
+        background-color: #f0f0f0;
+    }
+    header.active > ul li .material-symbols-outlined{
+        color: #2d2d2d;
+    }
+    /* header hover Fin */
+
+    footer{
+        position: relative;
+        background-color: #f7f4ef; 
+    }
+    footer > div:first-child{
+        padding: 50px 3%; box-sizing: border-box;
+        background: url('../images/bg_footer.png') no-repeat left/cover; 
+        color: #fff;
+    }
+    footer > div:first-child h2{
+        margin-bottom: 15px;
+        font-size: 36px; font-weight: 400; line-height: 65px;
+    }
+    footer > div:first-child p{
+        margin-bottom: 50px;
+        font-size: 18px; font-weight: 300; line-height: 26px;
+    }
+    footer > div:first-child input[type="email"]{
+        display: block; width: 100%; max-width: 400px;
+        margin-bottom: 50px; padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0);
+        color: #fff; font-size: 18px; font-weight: 300;  
+        transition: border-color 0.5s ease;
+    }
+    footer > div:first-child input[type="email"]::placeholder{
+        color: rgba(255,255,255,0.5);
+    }
+    footer > div:first-child input[type="email"]:focus{
+        border-color: rgba(255,255,255,1);
+    }
+    footer > div:first-child .btn.arrow{
+        width: 100%; max-width: 190px;
+        padding: 0 40px; margin-bottom: 50px;
+        border-color: rgba(255,255,255,0.3);
+    }
+    footer > div:first-child .btn.arrow:hover{
+        border-color: rgba(255,255,255,1);
+    }
+    footer > div:first-child .btn.arrow::after{
+        right: 40px;
+        background-image: url("../images/icon_arrow_white.png");
+    }
+    footer > div:first-child ul{
+        display: flex; gap: 5%;
+    }
+    footer > div:first-child ul li{
+        display: block; width: 18px; height: 18px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    footer > div:first-child ul li:first-of-type{
+        width: 9px;
+        background-image: url("../images/icon_facebook.png");
+    }
+    footer > div:first-child ul li:nth-last-of-type(2){
+        background-image: url("../images/icon_instagram.png");
+    }
+    footer > div:first-child ul li:nth-last-of-type(3){
+        background-image: url("../images/icon_pinterest.png");
+    }
+    footer > div:first-child ul li:last-of-type{
+        background-image: url("../images/icon_linkedIn.png");
+    }
+    footer > div:first-child ul li a{
+        display: block; 
+        text-indent: -9999px; line-height: 20px; 
+    }
+    footer > div:last-child{
+        display: flex; width: 100%; flex-wrap: wrap;
+        padding: 70px 3% 35px; box-sizing: border-box;
+    }
+    footer > div:last-child div:not(:last-of-type){
+        flex: 0 0 33.33%;
+    }
+    footer > div:last-child div h2{
+        margin-bottom: 40px;
+        color: #2d2d2d; font-size: 16px; font-weight: 700; 
+    }
+    footer > div:last-child div ul li{
+        display: block;
+    }
+    footer > div:last-child div ul li:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    footer > div:last-child a, span{
+        display: block;
+        color: #9b9b9b; font-size: 16px; font-weight: 300;
+        transition: color 0.3s ease;
+    }
+    footer > div:last-child a:hover{
+        color: #2d2d2d;
+    }
+    footer > div:last-of-type div:last-of-type{
+        margin-top: 90px; width: 100%;
+        display: flex; align-items: center; gap: 5%;
+    }
+    footer > div:last-child div:last-of-type span{
+        margin-left: auto;
+    }
+    /* footer Fin */
+}
+/* tablet */
+
+@media screen and (min-width: 1280px) {
+    header,
+    .productSlider,
+    main div:nth-of-type(5),
+    section.listContainer > div:nth-of-type(2),
+    .detailContainer,
+    .alsoLike,
+    .signContainer,
+    .myAccountContainer,
+    .myAddressContainer,
+    .myOrderContainer,
+    .messageContainer > *,
+    .locationContainer,
+    .hospiContainer > div:not(.bgContent),
+    .socialContainer > div:last-of-type,
+    .businessContainer > div:not(:first-of-type),
+    .magContainer > ul{
+        padding: 0 3%; box-sizing: border-box;
+    }
+    .btn{
+        line-height: 80px; font-size: 18px; letter-spacing: 1.35px;
+    }
+    mark.label{
+        max-width: 160px; min-width: 150px;
+        font-size: 18px; letter-spacing: 1.35px; line-height: 45px;
+    }
+    .bgContent{
+        padding: 570px 3% 50px;
+    }
+    .bgContent h2{
+        font-size: 120px;
+    }
+    .bgContent h2 + p{
+        margin-top: 30px;
+        font-size: 38px; 
+    }
+    main,
+    .alsoLike,
+    [class$="Container"]{
+        margin-bottom: 135px;
+    }
+
+    .toolTip{
+        font-size: 20px; 
+    }
+    .toolTip + .tooltipBox{
+        width: 165px;
+        top: -95px; left: 63px;
+        font-size: 16px;
+    }
+
+    .customSelect span{
+        font-size: 20px; line-height: 65px;
+    }
+    .customSelect span:after{
+        background: url("../images/icon_arrow.png") no-repeat center / cover;
+    }
+    .customSelect .selectOpt{
+        top: 66px;
+    }
+    .customSelect .selectOpt li{
+        font-size: 18px; letter-spacing: 1.35px;
+    }
+    .shopPanel,
+    .ourstoryPanel{
+        position: fixed; top: 0; left: 0; z-index: 100; 
+        width: 25vw; height: 100%; overflow-y: scroll;
+        padding: 40px 3%; box-sizing: border-box; 
+        background-color: #fff; 
+    }
+    .shopPanel h2,
+    .ourstoryPanel h2{
+        display: flex; align-items: center;
+        font-size: 20px; font-weight: 700; letter-spacing: 1.5px; 
+        color: #2d2d2d; margin-bottom: 70px; 
+    }
+    .shopPanel h2 button.material-symbols-outlined,
+    .ourstoryPanel h2 button.material-symbols-outlined{
+        font-size: 20px; margin-left: auto;
+    }
+    .shopPanel ul li,
+    .ourstoryPanel ul li{
+        display: block; padding-right: 30px; box-sizing: border-box;
+    }
+    .shopPanel ul > li:not(:last-of-type),
+    .ourstoryPanel ul > li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    .shopPanel ul > li.active,
+    .shopPanel ol li:hover,
+    .ourstoryPanel ul li:hover{
+        background: url("../images/icon_arrow.png") no-repeat right/20px;
+    }
+    .shopPanel li a,
+    .shopPanel li b,
+    .ourstoryPanel li a{
+        font-size: 28px; color: #b9b9b9; font-weight: 400; display: block;
+        transition: color 0.3s ease;
+    }
+    .shopPanel ul > li:not(:last-of-type):hover > a, 
+    .shopPanel ol li:hover a, 
+    .shopPanel li:hover b,
+    .shopPanel li.active b,
+    .ourstoryPanel li a:hover{
+        color: #2d2d2d;
+    }
+    .shopPanel li b{
+        cursor: default;
+    }
+    .shopPanel ul > li:last-of-type:hover a{
+        color: #900603;
+    }
+    .shopPanel ul > li{
+        position: relative;
+    }
+    .shopPanel ol{
+        display: none; 
+        position: fixed; top: 0; left: 25vw; z-index: 100;
+        width: 25vw; height: 100%; 
+        background-color: #f8f8f8;
+        padding: 130px 3%; box-sizing: border-box; 
+    }
+    .shopPanel ul li:hover ol,
+    .shopPanel ul li ol.active{
+        display: block;
+    }
+    .shopPanel ol li{
+        margin-bottom: 45px;
+    }
+    /* shopPanel, ourstoryPanel Fin */
+
+    .searchPanel{
+        position: fixed; top: 0; right: 0; z-index: 100; 
+        width: 50vw; height: 100%; overflow-y: scroll;
+        padding-top: 30px;
+        background-color: #fff; 
+    }
+    .searchPanel button.material-symbols-outlined{
+        display: block;
+        margin: 0 0 65px auto;
+        padding-right: 3%; box-sizing: border-box;
+        font-size: 20px;
+    }
+    .searchPanel div{ 
+        display: flex; align-items: center;
+        padding: 0 8% 35px; box-sizing: border-box;
+        border-bottom: 1px solid black; 
+    }
+    .searchPanel div span.material-symbols-outlined{
+        flex: 0 0 3%;
+        color: #b9b9b9; font-size: 25px;
+    }
+    .searchPanel div input{
+        flex: 1; margin-left: 15px; 
+        color: #2d2d2d; font-size: 24px; font-weight: 300;
+    }
+    .searchPanel div input::placeholder{
+        color: #b9b9b9;
+    }
+    /* serchPanel Fin */
+
+    .cartPanel{
+        position: fixed; top: 0; right: 0; z-index: 100; 
+        width: 50vw; height: 100vh; overflow-y: scroll;
+        background-color: #fff;
+    }
+    .cartPanel h2{
+        display: flex; align-items: center; 
+        padding: 30px 3% 30px; box-sizing: border-box;
+        border-bottom: 1px solid #b9b9b9;
+        color: #2d2d2d; font-size: 28px; font-weight: 400;  
+    }
+    .cartPanel h2 button.material-symbols-outlined{
+        margin-left: auto;
+        font-size: 20px;
+    }
+    .cartPanel div.emptyCart{
+        display: none;
+    }
+    .cartPanel div.emptyCart.active{
+        display: block;
+    }
+    .cartPanel div.emptyCart{
+        padding-top: 90px; text-align: center;
+    }
+    .cartPanel div.emptyCart h3{
+        margin-bottom: 30px;
+        color: #2d2d2d; font-size: 28px; font-weight: 400;
+    }
+    .cartPanel div.emptyCart p{
+        margin-bottom: 60px;
+        color: #b9b9b9; font-size: 20px; font-weight: 300;
+    }
+    .cartPanel div.emptyCart a{
+        margin: 0 auto;
+        width: 40%; max-width: 270px;
+        border-color: #b9b9b9;
+        color: #2d2d2d;
+    }
+    .cartPanel div.emptyCart a:hover{
+        border-color: black;
+    }
+    .cartPanel .fillCart{
+        display: none;
+    }
+    .cartPanel .fillCart.active{
+        display: block;
+    }
+    .cartPanel .fillCart{
+        padding: 0 3%; box-sizing: border-box; 
+    }
+    .cartPanel .fillCart > :first-child{
+        display: flex; flex-direction: column;
+        height: calc(100vh - 89px);
+    }  
+    .cartPanel .fillCart ul{
+        flex: 1; margin-bottom: 150px;
+    }
+    .cartPanel .fillCart ul li{
+        display: flex; align-items: center;
+        position: relative; 
+        padding: 55px 0; 
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .cartPanel .fillCart ul li button.removeBtn{
+        position: absolute; right: 0; top: 55px; 
+        color: #b9b9b9; font-size: 15px; 
+    }
+    .cartPanel .fillCart ul li a{
+        flex: 0 0 21%;
+    }
+    .cartPanel .fillCart ul li img{
+        display: block;
+        width: 100%; max-width: 186px; 
+    }
+    .cartPanel .fillCart ul li dl{
+        flex: 1;
+        margin-left: 1.5%;
+        font-size: 18px; font-weight: 400;
+    }
+    .cartPanel .fillCart ul li dl dt{
+        margin-bottom: 15px;
+        color: #2d2d2d; 
+    }
+    .cartPanel .fillCart ul li dl dd{
+        color: #b9b9b9; 
+    }
+    .cartPanel .fillCart ul li .qtyComponent{
+        flex: 0 0 14%;
+        border-bottom: 1px solid #b9b9b9; padding-bottom: 25px;
+        display: flex; align-items: center;
+    }
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"]{ 
+        width: 15px; height: 20px; flex-shrink: 0;
+        color: transparent; text-shadow: none;
+        background: no-repeat center / cover;
+        cursor: pointer;
+    }
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"].qtyRemove{
+        background-image: url("../images/icon_remove.png");
+    } 
+    .cartPanel .fillCart ul li .qtyComponent input[type="button"].qtyAdd{
+        background-image: url("../images/icon_add.png");
+    }
+    .cartPanel .fillCart ul li .qtyComponent span{
+        flex: 1;
+        padding: 0 10%; box-sizing: border-box; text-align: center;
+        color: black; font-size: 18px; font-weight: 700; 
+    }
+    .cartPanel .fillCart ul li > strong{
+        flex: 0 0 18%;
+        text-align: right;
+        color: #2d2d2d; font-size: 18px; font-weight: 400;
+    }
+    .cartPanel .fillCart ul + div{
+        height: 184px; padding-bottom: 30px;
+    }
+    .cartPanel .fillCart ul + div span{
+        display: flex; align-items: center;
+        margin-bottom: 30px; padding-bottom: 35px;
+        border-bottom: 1px solid #b9b9b9; 
+        color: black; font-size: 36px; font-weight: 400; 
+    }
+    .cartPanel .fillCart ul + div span strong{
+        margin-left: auto; 
+        font-weight: 400;
+    }
+    .cartPanel .fillCart button[type="submit"]{
+        width: 50%; max-width: 530px;
+        margin-left: auto;
+        text-transform: uppercase;
+    }
+    .cartPanel .fillCart button[type="submit"]:hover{
+        background-color: #2d2d2d; color: #fff;
+    }
+    /* cartPanel Fin */
+
+    header{
+        position: fixed; top: 0; left: 0; z-index: 90;
+        display: flex; align-items: center; 
+        width: 100%; padding-top: 45px;
+        transition: background-color 0.3s ease;
+    }
+    header ol{
+        display: inline-block;
+        position: absolute; top: 0; left: 0; 
+        overflow-x: hidden; white-space: nowrap;
+        animation: scroll 20s linear infinite;
+        background: #fff;
+    }
+    header ol li{
+        display: inline-block; padding: 0 600px; box-sizing: border-box;
+        font-size: 18px; line-height: 45px;
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0%);
+        }100%{
+            transform: translateX(-50%);
+        }
+    }
+    header ol:hover{
+        animation-play-state: paused;
+    }
+    /* banner Fin */
+    header h1{
+        flex: 0 0 13%;        
+    }
+    header h1 a{
+        display: block; max-width: 271px;
+    }
+    header h1 a img{
+        display: block; width: 100%;
+    }
+    header > button[type="button"]{
+        display: none;
+    }
+    header nav{
+        flex: 1; margin-left: 55px;
+        line-height: 80px;
+    }
+    header nav ul{
+        display: inline-flex; gap: 55px;
+        color: #fff; font-size: 18px; font-weight: 700; letter-spacing: 1.35px; 
+        transition: color 0.3s ease;
+    }
+    header nav ul li{
+        display: block;
+    }   
+    header nav ul li a{
+        display: block;
+    }
+    header > ul{
+        flex: 0 0 31%;
+        display: flex; align-items: center; gap: 8%;
+    }
+    header > ul li{
+        display: block;
+    }
+    header > ul li .material-symbols-outlined{
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+    header > ul li:first-of-type{
+        flex: 1;
+    }
+    header > ul li:not(:first-of-type){
+        flex: 0 0 auto;
+        text-align: right;
+    }
+    header > ul li:first-of-type button{
+        width: 100%; position: relative; 
+        padding: 0 20px; box-sizing: border-box; 
+        border: 1px solid #fff; border-radius: 21px;
+        line-height: 40px;
+        transition: border-color 0.3s ease;
+    }    
+    header > ul li:first-of-type button[type="button"] span:first-of-type{
+        color: #fff; font-size: 18px; font-weight: 700; letter-spacing: 1.35px;
+        transition: color 0.3s ease;
+    }
+    header > ul li:first-of-type button[type="button"] span.material-symbols-outlined{
+        position: absolute; top: 7.5px; right: 20px;
+    }
+    header > ul li:nth-of-type(4){
+        position: relative;
+    }
+    header sup{
+        position: absolute; top: -8px; right: -8px;
+        width: 20px; height: 20px; border-radius: 50%; 
+        font-size: 11px; line-height: 20px; text-align: center; 
+        background-color: #fff;
+    }
+    header > ul li:nth-of-type(5){
+        display: none;
+    }
+    /* header Fin */
+    header:hover{
+        background-color: #fff;
+    }
+    header:hover sup{
+        background-color: #f0f0f0;
+    }
+    header:hover nav ul,
+    header:hover > ul li button[type="button"] span:first-of-type,
+    header:hover > ul li .material-symbols-outlined{
+        color: #2d2d2d;
+    }
+    header:hover > ul li button[type="button"]{
+        border-color: #2d2d2d;
+    }
+    header:hover h1 img,
+    header.active h1 img{
+        content: url('../images/logo_hover.png');
+    }
+    header.active{
+        background-color: #fff;
+    }
+    header.active sup{
+        background-color: #f0f0f0;
+    }
+    header.active nav ul,
+    header.active > ul li button[type="button"] span:first-of-type,
+    header.active > ul li .material-symbols-outlined{
+        color: #2d2d2d;
+    }
+    header.active > ul li button[type="button"]{
+        border-color: #2d2d2d;
+    }
+    header nav ul:hover li a,
+    header nav ul:hover li button{
+        color: #b9b9b9; 
+        transition: color 0.3s ease;
+    }
+    header nav ul li:hover a,
+    header nav ul li:hover button{
+        color: #2d2d2d;
+        transition: color 0.3s ease;
+    }
+    header > ul:hover li .material-symbols-outlined{
+        color: #b9b9b9;
+    }
+    header > ul:hover li:first-of-type button[type="button"]{
+        border: 1px solid #b9b9b9;
+    }
+    header > ul:hover li:first-of-type button span:first-of-type{
+        color: #b9b9b9;
+    }
+    header > ul li:first-of-type:hover button[type="button"]{
+        border: 1px solid #2d2d2d;
+    }
+    header > ul li:first-of-type:hover button span:first-of-type{
+        color: #2d2d2d;
+    }
+    header > ul li:hover .material-symbols-outlined{
+        color: #2d2d2d;
+    }
+    /* header hover Fin */
+
+    footer{
+        position: relative;
+        background-color: #f7f4ef; 
+    }
+    footer:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div{
+        float: left; 
+    }
+    footer > div:first-child{
+        width: 30%; padding: 130px 3% 65px; box-sizing: border-box;
+        background: url('../images/bg_footer.png') no-repeat left/cover; 
+        color: #fff;
+    }
+    footer > div:first-child h2{
+        margin-bottom: 35px;
+        font-size: 62px; font-weight: 400; line-height: 65px;
+    }
+    footer > div:first-child p{
+        max-width: 290px; margin-bottom: 80px;
+        font-size: 24px; font-weight: 300; line-height: 26px;
+    }
+    footer > div:first-child input[type="email"]{
+        display: block; width: 100%; 
+        margin-bottom: 65px; padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0);
+        color: #fff; font-size: 22px; font-weight: 300;  
+        transition: border-color 0.5s ease;
+    }
+    footer > div:first-child input[type="email"]::placeholder{
+        color: rgba(255,255,255,0.5);
+    }
+    footer > div:first-child input[type="email"]:focus{
+        border-color: rgba(255,255,255,1);
+    }
+    footer > div:first-child .btn.arrow{
+        width: 100%; max-width: 210px;
+        padding: 0 50px; margin-bottom: 85px;
+        border-color: rgba(255,255,255,0.3);
+    }
+    footer > div:first-child .btn.arrow:hover{
+        border-color: rgba(255,255,255,1);
+    }
+    footer > div:first-child .btn.arrow::after{
+        right: 50px;
+        background-image: url("../images/icon_arrow_white.png");
+    }
+    footer > div:first-child .btn.arrow:hover::after{
+        right: 65px; 
+    }
+    footer > div:first-child ul{
+        display: flex; gap: 10%;
+    }
+    footer > div:first-child ul li{
+        display: block; width: 20px; height: 20px;
+        background-repeat: no-repeat; opacity: 0.5; 
+        transition: opacity 0.5s ease;
+    }
+    footer > div:first-child ul li:hover{
+        opacity: 1;
+    }
+    footer > div:first-child ul li:first-of-type{
+        width: 11px;
+        background-image: url("../images/icon_facebook.png");
+    }
+    footer > div:first-child ul li:nth-last-of-type(2){
+        background-image: url("../images/icon_instagram.png");
+    }
+    footer > div:first-child ul li:nth-last-of-type(3){
+        background-image: url("../images/icon_pinterest.png");
+    }
+    footer > div:first-child ul li:last-of-type{
+        background-image: url("../images/icon_linkedIn.png");
+    }
+    footer > div:first-child ul li a{
+        display: block; 
+        text-indent: -9999px; line-height: 20px; 
+    }
+    footer > div:last-child{
+        display: flex; width: 70%; 
+        padding: 130px 3% 65px 8.5%; box-sizing: border-box;
+    }
+    footer > div:last-child div:not(:last-of-type){
+        flex: 0 0 33.33%;
+    }
+    footer > div:last-child div h2{
+        margin-bottom: 45px;
+        color: #2d2d2d; font-size: 20px; font-weight: 700; 
+    }
+    footer > div:last-child div ul li{
+        display: block;
+    }
+    footer > div:last-child div ul li:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    footer > div:last-child a, span{
+        display: block;
+        color: #9b9b9b; font-size: 20px; font-weight: 300;
+        transition: color 0.3s ease;
+    }
+    footer > div:last-child a:hover{
+        color: #2d2d2d;
+    }
+    footer > div:last-of-type div:last-of-type{
+        position: absolute; left: 30%; bottom: 60px; width: 70%;
+        display: flex; align-items: center; gap: 50px;
+        padding: 0 3% 0 8.5%; box-sizing: border-box;
+    }
+    footer > div:last-child div:last-of-type span{
+        margin-left: auto;
+    }
+    /* footer Fin */
+}
+/* desktop */
